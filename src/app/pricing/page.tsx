@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Button } from "@/components/button";
 
 export const metadata: Metadata = {
   title: "Pricing — Breedbase",
@@ -18,7 +19,7 @@ const includedFeatures = [
 const faqs = [
   {
     q: "Is there really no credit card required?",
-    a: "Correct. You sign up, you get full access for 6 months, no payment details needed. We want you to actually use it before we ask for anything.",
+    a: "Correct. You sign up, you get full access for 6 months, no payment details needed.",
   },
   {
     q: "What happens after 6 months?",
@@ -26,63 +27,100 @@ const faqs = [
   },
   {
     q: "What if I want to cancel?",
-    a: "Just stop. No contracts, no cancellation flows. We're not in the business of making it difficult to leave — we'd rather earn your loyalty.",
+    a: "Just stop. No contracts, no cancellation flows.",
   },
   {
     q: "Is Breedbase only for UK trainers?",
-    a: "For now, yes. We're building specifically for the UK market — scheduling, invoicing, and terminology are all UK-first. We may expand later.",
+    a: "For now, yes. We're building specifically for the UK market first.",
   },
 ];
 
 export default function PricingPage() {
   return (
     <>
-      {/* ── Page hero ─────────────────────────────────────────── */}
-      <section className="bg-near-black pt-[120px] pb-[80px] lg:pt-[140px] lg:pb-[100px]">
+      {/* Hero */}
+      <section
+        className="pt-[120px] pb-[80px] lg:pt-[140px]"
+        style={{ background: "var(--color-teal)" }}
+      >
         <div className="max-w-site mx-auto px-6 lg:px-10">
-          <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-dark-muted mb-8">
-            Pricing
+          <p
+            className="font-inter text-[11px] font-semibold uppercase tracking-[0.12em] mb-8"
+            style={{ color: "rgba(255,255,255,0.4)" }}
+          >
+            PRICING
           </p>
-          <h1 className="font-fraunces text-[48px] sm:text-[58px] lg:text-[68px] leading-[1.04] tracking-[-0.02em] text-white max-w-[640px]">
+          <h1
+            className="font-fraunces font-medium text-[48px] lg:text-[64px] leading-[1.04] text-white max-w-[640px]"
+          >
             Simple. Embarrassingly good right now.
           </h1>
         </div>
       </section>
 
-      {/* ── Pricing block ─────────────────────────────────────── */}
-      <section className="bg-warm-white py-[80px] lg:py-[100px]">
+      {/* Pricing block */}
+      <section className="bg-canvas py-[80px]">
         <div className="max-w-site mx-auto px-6 lg:px-10">
-          <div className="max-w-[560px]">
-            {/* Plan box — sharp corners, clean border */}
-            <div className="border border-dark-border p-8 lg:p-10">
-              <p className="font-manrope text-[10px] uppercase tracking-[0.2em] text-muted mb-6">
-                Founding trainer
+          <div className="max-w-[520px] mx-auto">
+            <div
+              style={{
+                background: "var(--color-surface)",
+                border: "2px solid var(--color-teal)",
+                padding: "48px",
+              }}
+            >
+              <p
+                className="font-inter font-semibold text-[11px] uppercase tracking-[0.12em] mb-6"
+                style={{ color: "var(--color-teal)" }}
+              >
+                FOUNDING TRAINER
               </p>
 
-              {/* Price display */}
-              <div className="flex items-baseline gap-4 mb-2">
-                <span className="font-fraunces text-[72px] lg:text-[80px] leading-none text-ink tracking-[-0.03em]">
+              {/* Price */}
+              <div className="flex items-baseline gap-4">
+                <span
+                  className="font-fraunces font-semibold text-[80px] leading-none tracking-[-0.02em]"
+                  style={{ color: "var(--color-charcoal-dark)" }}
+                >
                   Free
                 </span>
-                <span className="font-manrope text-[16px] text-muted leading-tight">
-                  for 6<br />months
+                <span
+                  className="font-fraunces text-[20px] leading-snug"
+                  style={{ color: "var(--color-text-muted)" }}
+                >
+                  for 6 months
                 </span>
               </div>
-              <p className="font-manrope text-[15px] text-muted mb-1">
+              <p
+                className="font-inter text-[16px] mt-2"
+                style={{ color: "var(--color-text-muted)" }}
+              >
                 Then £10/month — locked for life.
               </p>
-              <p className="font-manrope text-[13px] text-muted italic mb-8">
+              <p
+                className="font-inter font-semibold text-[14px] mt-1"
+                style={{ color: "var(--color-amber)" }}
+              >
                 First 20 trainers only.
               </p>
 
               {/* Feature list */}
-              <div className="space-y-3 mb-10">
+              <div
+                className="mt-8 pt-8 space-y-3"
+                style={{ borderTop: "1px solid var(--color-border)" }}
+              >
                 {includedFeatures.map((feature) => (
                   <div key={feature} className="flex items-start gap-3">
-                    <span className="font-manrope text-[15px] text-muted shrink-0 select-none mt-px">
+                    <span
+                      className="font-inter text-[15px] shrink-0 select-none"
+                      style={{ color: "var(--color-text-muted)" }}
+                    >
                       —
                     </span>
-                    <span className="font-manrope text-[15px] text-ink">
+                    <span
+                      className="font-inter text-[15px]"
+                      style={{ color: "var(--color-text-primary)" }}
+                    >
                       {feature}
                     </span>
                   </div>
@@ -90,39 +128,45 @@ export default function PricingPage() {
               </div>
 
               {/* CTA */}
-              <a
-                href="https://app.breedbase.com/register"
-                className="block w-full text-center bg-near-black text-accent font-manrope text-[14px] font-semibold py-4 hover:opacity-80 transition-opacity"
+              <div className="mt-8">
+                <Button
+                  variant="primary"
+                  href="https://app.breedbase.com/signup"
+                  className="w-full justify-center"
+                >
+                  Claim your free spot
+                </Button>
+              </div>
+              <p
+                className="font-inter text-[13px] mt-3 text-center"
+                style={{ color: "var(--color-text-muted)" }}
               >
-                Claim your free spot
-              </a>
-              <p className="mt-3 font-manrope text-[12px] text-muted text-center">
                 20 spots. No credit card required.
               </p>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* ── FAQ ───────────────────────────────────────────────── */}
-      <section className="bg-warm-white pb-[80px] lg:pb-[120px]">
-        <div className="max-w-site mx-auto px-6 lg:px-10">
-          <div className="border-t border-hairline pt-12 lg:pt-16 max-w-[640px]">
-            <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-muted mb-10">
-              Questions
-            </p>
-            <div className="space-y-10">
-              {faqs.map(({ q, a }) => (
-                <div key={q}>
-                  <p className="font-manrope text-[16px] font-semibold text-ink mb-2 leading-snug">
-                    {q}
-                  </p>
-                  <p className="font-manrope text-[15px] text-muted leading-[1.7]">
-                    {a}
-                  </p>
-                </div>
-              ))}
-            </div>
+          {/* FAQ */}
+          <div
+            className="max-w-[520px] mx-auto mt-16 pt-16"
+            style={{ borderTop: "1px solid var(--color-border)" }}
+          >
+            {faqs.map(({ q, a }) => (
+              <div key={q} className="mb-10">
+                <p
+                  className="font-inter font-semibold text-[17px] mb-2"
+                  style={{ color: "var(--color-charcoal-dark)" }}
+                >
+                  {q}
+                </p>
+                <p
+                  className="font-inter text-[17px] leading-[1.7]"
+                  style={{ color: "var(--color-text-muted)" }}
+                >
+                  {a}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

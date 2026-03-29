@@ -2,18 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
+:root {
+  /* Brand */
+  --color-teal:          #1A5C4F;
+  --color-teal-dark:     #134438;
+  --color-teal-light:    #EBF4F2;
+  --color-amber:         #D4922A;
+  --color-amber-dark:    #B97820;
+  --color-amber-light:   #FDF3E3;
+
+  /* Neutrals */
+  --color-charcoal:      #2D2D2D;
+  --color-charcoal-dark: #1A1A1A;
+  --color-surface:       #FFFFFF;
+  --color-bg:            #F7F4EF;
+  --color-border:        #E8E4DC;
+
+  /* Text */
+  --color-text-primary:  #2D2D2D;
+  --color-text-muted:    #7A7060;
+  --color-text-light:    #F7F4EF;
+
+  /* Semantic */
+  --color-error:         #D45B5B;
+  --color-success:       #16A34A;
+  --color-warning:       #D4922A;
 }
 
+html { scroll-behavior: smooth; }
 body {
-  background-color: #FAFAF7;
-  color: #1A1A18;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-/* Prevent layout shift on scroll when nav becomes opaque */
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }

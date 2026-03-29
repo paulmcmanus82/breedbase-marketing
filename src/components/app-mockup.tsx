@@ -5,32 +5,28 @@ export function AppMockup() {
       client: "Sophie W.",
       dog: "Biscuit",
       type: "Assessment",
-      color: "#C8F04A",
-      textColor: "#1A1A18",
+      color: "var(--color-teal)",
     },
     {
       time: "11:00am",
       client: "Tom H.",
       dog: "Loki",
       type: "1:1 Session",
-      color: "#86BBFD",
-      textColor: "#1A1A18",
+      color: "var(--color-success)",
     },
     {
       time: "2:00pm",
       client: "Claire M.",
       dog: "Pepper",
       type: "Follow-up",
-      color: "#FDBA74",
-      textColor: "#1A1A18",
+      color: "var(--color-amber)",
     },
     {
       time: "4:30pm",
       client: "Dan B.",
       dog: "Zeus",
       type: "Group Class",
-      color: "#C084FC",
-      textColor: "#1A1A18",
+      color: "#7C3AED",
     },
   ];
 
@@ -44,80 +40,98 @@ export function AppMockup() {
 
   return (
     <div className="relative w-full flex items-center justify-center lg:justify-end py-12 lg:py-0 select-none">
-      {/* Background client profile card */}
       <div
-        className="absolute top-4 lg:top-0 right-0 lg:right-[-16px] w-52 bg-white border border-hairline p-4 shadow-md z-0"
-        style={{ transform: "rotate(2deg) translateY(8px)" }}
-      >
-        <div className="flex items-center gap-2.5 mb-3">
-          <div className="w-8 h-8 bg-accent flex items-center justify-center text-[11px] font-semibold text-near-black font-manrope shrink-0">
-            SW
-          </div>
-          <div className="min-w-0">
-            <p className="text-xs font-semibold text-ink font-manrope truncate">
-              Sophie W.
-            </p>
-            <p className="text-[11px] text-muted font-manrope">
-              Biscuit · Labrador
-            </p>
-          </div>
-        </div>
-        <div className="space-y-1.5 mb-3">
-          {[
-            { label: "Sessions", value: "6 total" },
-            { label: "Programme", value: "Reactive dog" },
-            { label: "Progress", value: "Week 3 of 6" },
-          ].map(({ label, value }) => (
-            <div key={label} className="flex justify-between items-center">
-              <span className="text-[11px] text-muted font-manrope">{label}</span>
-              <span className="text-[11px] font-medium text-ink font-manrope">
-                {value}
-              </span>
-            </div>
-          ))}
-        </div>
-        {/* Progress bar */}
-        <div className="h-1 bg-surface overflow-hidden">
-          <div className="h-full bg-accent" style={{ width: "50%" }} />
-        </div>
-        <p className="text-[10px] text-muted font-manrope mt-1.5">50% complete</p>
-      </div>
-
-      {/* Main schedule card */}
-      <div
-        className="relative bg-white border border-[#E0E0DB] shadow-2xl w-[288px] z-10 overflow-hidden"
-        style={{ transform: "rotate(-1.5deg)" }}
+        style={{
+          maxWidth: "300px",
+          width: "100%",
+          transform: "rotate(2deg)",
+          boxShadow: "0 24px 60px rgba(0,0,0,0.14)",
+          background: "var(--color-surface)",
+          border: "1px solid var(--color-border)",
+          overflow: "hidden",
+        }}
       >
         {/* Dark header */}
-        <div className="bg-near-black px-4 pt-4 pb-3">
-          <div className="flex items-center justify-between mb-3">
-            <span className="font-manrope text-[11px] font-semibold text-dark-muted uppercase tracking-widest">
-              Today
+        <div
+          style={{
+            background: "var(--color-charcoal-dark)",
+            padding: "12px 16px",
+          }}
+        >
+          {/* TODAY / date row */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              marginBottom: "10px",
+            }}
+          >
+            <span
+              style={{
+                fontFamily: "var(--font-inter), system-ui, sans-serif",
+                fontWeight: 600,
+                fontSize: "10px",
+                textTransform: "uppercase",
+                letterSpacing: "0.12em",
+                color: "rgba(255,255,255,0.5)",
+              }}
+            >
+              TODAY
             </span>
-            <span className="font-manrope text-[11px] text-dark-muted">
+            <span
+              style={{
+                fontFamily: "var(--font-inter), system-ui, sans-serif",
+                fontSize: "11px",
+                color: "rgba(255,255,255,0.5)",
+              }}
+            >
               Wed 4 June
             </span>
           </div>
-          {/* Day strip */}
-          <div className="grid grid-cols-5 gap-1">
+
+          {/* Date strip */}
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(5, 1fr)",
+              gap: "4px",
+            }}
+          >
             {days.map(({ d, n, active }) => (
               <div
                 key={n}
-                className={`py-1.5 text-center ${
-                  active ? "bg-accent" : "bg-[#1A1A18]"
-                }`}
+                style={{
+                  background: active
+                    ? "var(--color-amber)"
+                    : "rgba(255,255,255,0.08)",
+                  padding: "6px 4px",
+                  textAlign: "center",
+                }}
               >
                 <p
-                  className={`text-[9px] leading-none mb-0.5 font-manrope font-medium ${
-                    active ? "text-near-black" : "text-dark-muted"
-                  }`}
+                  style={{
+                    fontFamily: "var(--font-inter), system-ui, sans-serif",
+                    fontWeight: 500,
+                    fontSize: "9px",
+                    lineHeight: 1,
+                    marginBottom: "3px",
+                    color: active
+                      ? "var(--color-charcoal-dark)"
+                      : "rgba(255,255,255,0.6)",
+                  }}
                 >
                   {d}
                 </p>
                 <p
-                  className={`text-[13px] leading-none font-fraunces ${
-                    active ? "text-near-black" : "text-dark-muted"
-                  }`}
+                  style={{
+                    fontFamily: "var(--font-fraunces), Georgia, serif",
+                    fontSize: "13px",
+                    lineHeight: 1,
+                    color: active
+                      ? "var(--color-charcoal-dark)"
+                      : "rgba(255,255,255,0.6)",
+                  }}
                 >
                   {n}
                 </p>
@@ -127,21 +141,70 @@ export function AppMockup() {
         </div>
 
         {/* Session rows */}
-        <div className="divide-y divide-[#F5F5F2]">
-          {sessions.map(({ time, client, dog, type, color }) => (
-            <div key={time} className="flex items-stretch gap-0 px-4 py-2.5">
-              <div className="w-[52px] text-[11px] text-muted font-manrope pt-0.5 shrink-0">
+        <div
+          style={{
+            background: "var(--color-surface)",
+          }}
+        >
+          {sessions.map(({ time, client, dog, type, color }, i) => (
+            <div
+              key={time}
+              style={{
+                display: "flex",
+                alignItems: "stretch",
+                padding: "10px 12px",
+                borderTop:
+                  i === 0
+                    ? "none"
+                    : "1px solid var(--color-border)",
+              }}
+            >
+              <div
+                style={{
+                  width: "52px",
+                  flexShrink: 0,
+                  fontFamily: "var(--font-inter), system-ui, sans-serif",
+                  fontSize: "11px",
+                  color: "var(--color-text-muted)",
+                  paddingTop: "1px",
+                }}
+              >
                 {time}
               </div>
               <div
-                className="flex-1 pl-3 border-l-[2.5px]"
-                style={{ borderLeftColor: color }}
+                style={{
+                  flex: 1,
+                  paddingLeft: "12px",
+                  borderLeft: `2px solid ${color}`,
+                }}
               >
-                <p className="text-[12px] font-semibold text-ink font-manrope leading-snug">
-                  {client}
-                  <span className="font-normal text-muted"> · {dog}</span>
+                <p
+                  style={{
+                    fontFamily: "var(--font-inter), system-ui, sans-serif",
+                    fontWeight: 600,
+                    fontSize: "12px",
+                    color: "var(--color-text-primary)",
+                    lineHeight: 1.3,
+                  }}
+                >
+                  {client}{" "}
+                  <span
+                    style={{
+                      fontWeight: 400,
+                      color: "var(--color-text-muted)",
+                    }}
+                  >
+                    · {dog}
+                  </span>
                 </p>
-                <p className="text-[11px] text-muted font-manrope mt-0.5">
+                <p
+                  style={{
+                    fontFamily: "var(--font-inter), system-ui, sans-serif",
+                    fontSize: "11px",
+                    color: "var(--color-text-muted)",
+                    marginTop: "2px",
+                  }}
+                >
                   {type}
                 </p>
               </div>
@@ -149,24 +212,36 @@ export function AppMockup() {
           ))}
         </div>
 
-        {/* Footer hint */}
-        <div className="px-4 py-3 border-t border-[#F5F5F2] bg-[#FAFAF7]">
-          <p className="text-[11px] text-muted font-manrope">
-            4 sessions today · 2 notes pending
-          </p>
+        {/* Bottom bar */}
+        <div
+          style={{
+            background: "var(--color-teal-light)",
+            borderTop: "1px solid var(--color-border)",
+            padding: "8px 12px",
+            display: "flex",
+            alignItems: "center",
+            gap: "6px",
+          }}
+        >
+          <span
+            style={{
+              width: "6px",
+              height: "6px",
+              borderRadius: "50%",
+              background: "var(--color-success)",
+              flexShrink: 0,
+            }}
+          />
+          <span
+            style={{
+              fontFamily: "var(--font-inter), system-ui, sans-serif",
+              fontSize: "10px",
+              color: "var(--color-teal)",
+            }}
+          >
+            Synced to Google Calendar · 4 sessions today · 2 notes pending
+          </span>
         </div>
-      </div>
-
-      {/* Notification pill — floating bottom-left of the cluster */}
-      <div
-        className="absolute bottom-8 lg:bottom-4 left-4 lg:left-0 bg-near-black text-white font-manrope text-[11px] px-3 py-2 shadow-lg flex items-center gap-2 z-20"
-        style={{ transform: "rotate(-0.5deg)" }}
-      >
-        <span
-          className="w-2 h-2 bg-accent shrink-0"
-          style={{ borderRadius: "50%" }}
-        />
-        Synced to Google Calendar
       </div>
     </div>
   );

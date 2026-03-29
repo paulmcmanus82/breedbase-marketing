@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Button } from "@/components/button";
 import { AppMockup } from "@/components/app-mockup";
 
 const features = [
@@ -25,13 +25,13 @@ const features = [
   {
     name: "Homework delivery",
     description:
-      "Coming soon — send exercises to clients after sessions, see who's keeping up, nudge who isn't.",
+      "Send exercises to clients after sessions, see who's keeping up, nudge who isn't.",
     comingSoon: true,
   },
   {
     name: "Invoicing & payments",
     description:
-      "Coming soon — generate invoices from completed sessions, get paid online, stop chasing.",
+      "Generate invoices from completed sessions, get paid online, stop chasing.",
     comingSoon: true,
   },
 ];
@@ -39,86 +39,117 @@ const features = [
 export default function Home() {
   return (
     <>
-      {/* ── Hero ──────────────────────────────────────────────── */}
-      <section className="min-h-screen flex items-center bg-warm-white pt-[64px]">
+      {/* 1. Hero */}
+      <section className="min-h-screen flex items-center bg-canvas pt-[64px]">
         <div className="w-full max-w-site mx-auto px-6 lg:px-10 py-16 lg:py-0">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-6 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
             {/* Left — 7 cols */}
             <div className="lg:col-span-7">
-              <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-muted mb-6 lg:mb-8">
-                The business tool for dog trainers
+              <p
+                className="font-inter text-[11px] font-semibold uppercase tracking-[0.12em] mb-6"
+                style={{ color: "var(--color-text-muted)" }}
+              >
+                THE BUSINESS TOOL FOR DOG TRAINERS
               </p>
-              <h1 className="font-fraunces text-[48px] sm:text-[60px] lg:text-[76px] xl:text-[84px] leading-[1.02] tracking-[-0.02em] text-ink mb-6 lg:mb-8">
-                Stop running your business on a WhatsApp thread{" "}
-                <span className="text-accent">and a prayer.</span>
+              <h1
+                className="font-fraunces font-semibold text-[52px] lg:text-[88px] leading-[1.0] tracking-[-0.02em]"
+                style={{ color: "var(--color-charcoal-dark)" }}
+              >
+                Stop running your
+                <br />
+                business on a
+                <br />
+                WhatsApp thread
+                <br />
+                <span style={{ color: "var(--color-amber)" }}>
+                  and a prayer.
+                </span>
               </h1>
-              <p className="font-manrope text-[17px] lg:text-[18px] text-muted leading-[1.6] max-w-[480px] mb-8 lg:mb-10">
+              <p
+                className="font-inter text-[17px] leading-[1.7] max-w-[480px] mt-6"
+                style={{ color: "var(--color-text-muted)" }}
+              >
                 Breedbase handles your scheduling, client records, and training
                 programmes — built for dog trainers, not adapted from something
                 else.
               </p>
-              <div>
-                <a
-                  href="https://app.breedbase.com/register"
-                  className="inline-block bg-near-black text-accent font-manrope text-[14px] font-medium px-6 py-3.5 hover:opacity-80 transition-opacity"
-                >
+              <div className="mt-10">
+                <Button variant="primary" href="https://app.breedbase.com/signup">
                   Get 6 months free
-                </a>
-                <p className="mt-3 font-manrope text-[12px] text-muted">
-                  First 20 trainers only · No credit card · £10/month after
-                </p>
+                </Button>
               </div>
+              <p
+                className="font-inter text-[13px] mt-3"
+                style={{ color: "var(--color-text-muted)" }}
+              >
+                First 20 trainers only · No credit card · £10/month after
+              </p>
             </div>
 
             {/* Right — 5 cols */}
-            <div className="lg:col-span-5 lg:h-[520px] relative">
+            <div className="lg:col-span-5">
               <AppMockup />
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── Problem section ───────────────────────────────────── */}
-      <section className="bg-near-black py-[80px] lg:py-[120px]">
+      {/* 2. Problem */}
+      <section
+        className="py-[80px] lg:py-[120px]"
+        style={{ background: "var(--color-teal)" }}
+      >
         <div className="max-w-site mx-auto px-6 lg:px-10">
-          <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-dark-muted mb-8 lg:mb-10">
-            The reality
+          <p
+            className="font-inter text-[11px] font-semibold uppercase tracking-[0.12em] mb-8"
+            style={{ color: "rgba(255,255,255,0.4)" }}
+          >
+            THE REALITY
           </p>
-          <h2 className="font-fraunces text-[42px] sm:text-[52px] lg:text-[60px] leading-[1.05] tracking-[-0.02em] text-white mb-14 lg:mb-16 max-w-[640px]">
-            You're organised. Your tools aren't.
+          <h2
+            className="font-fraunces font-medium text-[40px] lg:text-[56px] leading-[1.05] text-white mb-14"
+          >
+            You&apos;re organised. Your tools aren&apos;t.
           </h2>
 
-          {/* Numbered statements */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-8 mb-14 lg:mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
             {[
               {
-                num: "01",
+                n: "01",
                 text: "Your client's address is in a text from six months ago.",
               },
               {
-                num: "02",
+                n: "02",
                 text: "You sent the invoice. You think. You're not sure if they paid.",
               },
               {
-                num: "03",
+                n: "03",
                 text: "The session notes are in four different apps and your memory.",
               },
-            ].map(({ num, text }) => (
-              <div key={num}>
-                <p className="font-fraunces text-[80px] lg:text-[96px] leading-none text-dark-border mb-4 select-none">
-                  {num}
+            ].map(({ n, text }) => (
+              <div key={n}>
+                <p
+                  className="font-fraunces text-[100px] lg:text-[120px] leading-none select-none"
+                  style={{ color: "rgba(255,255,255,0.1)" }}
+                >
+                  {n}
                 </p>
-                <p className="font-manrope text-[17px] text-white leading-[1.6]">
+                <p className="font-inter text-[17px] text-white leading-[1.6] -mt-6">
                   {text}
                 </p>
               </div>
             ))}
           </div>
 
-          {/* Body text */}
-          <div className="border-t border-dark-border pt-12">
-            <p className="font-manrope text-[17px] lg:text-[18px] text-dark-muted leading-[1.7] max-w-[640px]">
-              Most trainers aren't disorganised. They're just using tools that
+          <div
+            className="mt-12 pt-12"
+            style={{ borderTop: "1px solid rgba(255,255,255,0.2)" }}
+          >
+            <p
+              className="font-inter text-[17px] leading-[1.7] max-w-[640px]"
+              style={{ color: "rgba(255,255,255,0.75)" }}
+            >
+              Most trainers aren&apos;t disorganised. They&apos;re just using tools that
               were never designed for them. Breedbase was built from scratch for
               how dog trainers actually work — by someone whose wife is one.
             </p>
@@ -126,95 +157,123 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Features section ──────────────────────────────────── */}
-      <section className="bg-warm-white py-[80px] lg:py-[120px]">
+      {/* 3. Features */}
+      <section className="bg-canvas py-[80px] lg:py-[100px]">
         <div className="max-w-site mx-auto px-6 lg:px-10">
-          <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-muted mb-8 lg:mb-10">
-            What you get
+          <p
+            className="font-inter text-[11px] font-semibold uppercase tracking-[0.12em] mb-4"
+            style={{ color: "var(--color-text-muted)" }}
+          >
+            WHAT YOU GET
           </p>
-          <h2 className="font-fraunces text-[40px] sm:text-[48px] lg:text-[56px] leading-[1.05] tracking-[-0.02em] text-ink mb-12 lg:mb-16 max-w-[640px]">
-            Everything in one place. Nothing you don't need.
+          <h2
+            className="font-fraunces font-medium text-[40px] lg:text-[52px] leading-[1.05] mb-12"
+            style={{ color: "var(--color-charcoal-dark)" }}
+          >
+            Everything in one place. Nothing you don&apos;t need.
           </h2>
 
-          {/* Feature list */}
           <div>
-            {features.map((feature) => (
+            {features.map((feature, i) => (
               <div
                 key={feature.name}
-                className={`border-t border-hairline py-8 lg:py-10 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 transition-opacity ${
-                  feature.comingSoon ? "opacity-40" : ""
+                className={`py-10 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 ${
+                  feature.comingSoon ? "opacity-50" : ""
                 }`}
+                style={{
+                  borderTop: "1px solid var(--color-border)",
+                  borderBottom:
+                    i === features.length - 1
+                      ? "1px solid var(--color-border)"
+                      : "none",
+                }}
               >
-                <div className="md:col-span-4 lg:col-span-4">
+                <div className="md:col-span-4">
                   <div className="flex items-center gap-3 flex-wrap">
-                    <h3 className="font-fraunces text-[22px] lg:text-[26px] text-ink leading-snug">
+                    <h3
+                      className="font-fraunces font-medium text-[26px] leading-snug"
+                      style={{ color: "var(--color-teal)" }}
+                    >
                       {feature.name}
                     </h3>
                     {feature.comingSoon && (
-                      <span className="font-manrope text-[9px] uppercase tracking-[0.12em] bg-surface text-muted px-2 py-1">
+                      <span
+                        className="font-inter text-[11px] uppercase tracking-[0.08em] px-2 py-0.5 rounded-none"
+                        style={{
+                          background: "var(--color-teal-light)",
+                          color: "var(--color-teal)",
+                        }}
+                      >
                         Coming soon
                       </span>
                     )}
                   </div>
                 </div>
-                <div className="md:col-span-8 lg:col-span-8">
-                  <p className="font-manrope text-[16px] text-muted leading-[1.7]">
+                <div className="md:col-span-8">
+                  <p
+                    className="font-inter text-[17px] leading-[1.7]"
+                    style={{ color: "var(--color-text-muted)" }}
+                  >
                     {feature.description}
                   </p>
                 </div>
               </div>
             ))}
-            <div className="border-t border-hairline" />
           </div>
         </div>
       </section>
 
-      {/* ── Pricing teaser ────────────────────────────────────── */}
-      <section className="bg-near-black py-[80px] lg:py-[120px]">
+      {/* 4. Early access */}
+      <section
+        className="py-[80px] lg:py-[120px]"
+        style={{ background: "var(--color-charcoal-dark)" }}
+      >
         <div className="max-w-site mx-auto px-6 lg:px-10">
-          <div className="max-w-[680px]">
-            <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-dark-muted mb-8">
-              Early access
-            </p>
-            <h2 className="font-fraunces text-[42px] sm:text-[52px] lg:text-[60px] leading-[1.05] tracking-[-0.02em] text-white mb-6 lg:mb-8">
-              An embarrassingly good deal.
-            </h2>
-            <p className="font-manrope text-[17px] lg:text-[18px] text-dark-muted leading-[1.7] mb-10 lg:mb-12">
-              We're in early access. The first 20 trainers get 6 months
-              completely free. After that, founding members pay £10/month —
-              locked for life. We're doing this because we want trainers who'll
-              tell us what to fix.
-            </p>
-            <div>
-              <a
-                href="https://app.breedbase.com/register"
-                className="inline-block bg-accent text-near-black font-manrope text-[14px] font-semibold px-6 py-3.5 hover:opacity-80 transition-opacity"
-              >
-                Claim your spot
-              </a>
-              <p className="mt-3 font-manrope text-[12px] text-dark-muted">
-                20 spots. No credit card. No contracts.
-              </p>
-            </div>
+          <p
+            className="font-inter text-[11px] font-semibold uppercase tracking-[0.12em] mb-4"
+            style={{ color: "rgba(255,255,255,0.4)" }}
+          >
+            EARLY ACCESS
+          </p>
+          <h2 className="font-fraunces font-medium text-[40px] lg:text-[52px] text-white">
+            An embarrassingly good deal.
+          </h2>
+          <p
+            className="font-inter text-[17px] leading-[1.7] max-w-[580px] mt-6"
+            style={{ color: "rgba(255,255,255,0.7)" }}
+          >
+            We&apos;re in early access. The first 20 trainers get 6 months completely
+            free. After that, founding members pay £10/month — locked for life.
+            We&apos;re doing this because we want trainers who&apos;ll tell us what to fix.
+          </p>
+          <div className="mt-10">
+            <Button variant="secondary" href="https://app.breedbase.com/signup">
+              Claim your spot
+            </Button>
           </div>
+          <p
+            className="font-inter text-[13px] mt-3"
+            style={{ color: "rgba(255,255,255,0.5)" }}
+          >
+            20 spots. No credit card. No contracts.
+          </p>
         </div>
       </section>
 
-      {/* ── Final CTA ─────────────────────────────────────────── */}
-      <section className="bg-warm-white py-[80px] lg:py-[120px]">
-        <div className="max-w-site mx-auto px-6 lg:px-10 text-center">
-          <h2 className="font-fraunces text-[44px] sm:text-[52px] lg:text-[64px] leading-[1.08] tracking-[-0.02em] text-ink mb-8 max-w-[720px] mx-auto">
-            Your clients deserve a trainer who isn't drowning in admin.
-          </h2>
-          <a
-            href="https://app.breedbase.com/register"
-            className="inline-block bg-near-black text-accent font-manrope text-[14px] font-medium px-7 py-4 hover:opacity-80 transition-opacity"
+      {/* 5. Final CTA */}
+      <section className="bg-canvas py-[80px] lg:py-[100px] text-center">
+        <div className="max-w-site mx-auto px-6 lg:px-10">
+          <h2
+            className="font-fraunces font-medium text-[40px] lg:text-[52px] max-w-[640px] mx-auto leading-[1.08]"
+            style={{ color: "var(--color-charcoal-dark)" }}
           >
-            Get 6 months free
-          </a>
-          <p className="mt-3 font-manrope text-[12px] text-muted">
-            First 20 trainers only · No credit card required
-          </p>
+            Your clients deserve a trainer who isn&apos;t drowning in admin.
+          </h2>
+          <div className="mt-10 flex justify-center">
+            <Button variant="secondary" href="https://app.breedbase.com/signup">
+              Get free access
+            </Button>
+          </div>
         </div>
       </section>
     </>

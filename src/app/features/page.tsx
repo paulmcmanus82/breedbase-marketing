@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Button } from "@/components/button";
 
 export const metadata: Metadata = {
   title: "Features — Breedbase",
@@ -10,52 +11,38 @@ const features = [
   {
     name: "Scheduling",
     description:
-      "Book assessments, 1:1s, follow-ups, and group classes from your phone in under a minute.",
-    detail:
-      "No more bouncing between a paper diary and a phone calendar. Open Breedbase, pick a client, pick a date, done. Every session type is there — assessment, 1:1, follow-up, group class. Your day view shows you exactly what's on and who's coming. Syncs with Google Calendar automatically so you're never managing two diaries at once.",
+      "Book assessments, 1:1s, follow-ups, and group classes from your phone in under a minute. Every session type is there — you pick the type, the client, the date, and you're done. Syncs with Google Calendar automatically so you're never managing two diaries at once.",
   },
   {
     name: "Client & dog profiles",
     description:
-      "Every client, every dog, every session — in one place.",
-    detail:
-      "The stuff that lives in your head right now — breed, vaccination status, behavioural history, emergency contacts, who the owner is — lives in Breedbase instead. Search any client or dog in seconds. See their full history at a glance before a session. Add intake notes when a new client enquires. Nothing gets lost in a chat thread.",
+      "Every client, every dog, every session — in one place. Breed, vaccination status, behavioural history, emergency contacts, who the owner is — lives in Breedbase. Search any client or dog in seconds. See their full history at a glance before a session.",
   },
   {
     name: "Training programmes",
     description:
-      "Structure a multi-week programme and track real progress session by session.",
-    detail:
-      "Create a 6-week reactive dog programme, a puppy foundation course, or a custom plan for a specific behavioural issue. Each programme has sessions, each session has objectives and notes. Mark sessions complete as you go, log progress readings, and see at a glance where every dog is on their programme. Not just a list of dates — actual documented development.",
+      "Create a 6-week reactive dog programme, a puppy foundation course, or a custom plan for a specific behavioural issue. Each programme has sessions, each session has objectives and notes. Mark sessions complete as you go and see where every dog is on their programme.",
   },
   {
     name: "Session notes",
     description:
-      "Log what happened while it's fresh. Notes stay with the dog's record forever.",
-    detail:
-      "After a session, open the dog's profile and write your notes directly. They're attached to that session, date-stamped, and searchable. Six months later when someone asks where you left off — you know. When a dog gets referred to a vet, you have the full history ready. When a client disputes something — the record is there.",
+      "After a session, open the dog's profile and write your notes directly. They're attached to that session, date-stamped, and permanent. Six months later when someone asks where you left off — you know. When a dog gets referred to a vet, you have the full history ready.",
   },
   {
     name: "Google Calendar sync",
     description:
-      "Connect once. Every session appears in your Google Calendar automatically.",
-    detail:
-      "Link your Google Calendar in one step. From then on, every session you book in Breedbase appears in your calendar instantly. Edit or cancel a session in Breedbase and your calendar updates. You always have one source of truth — and you can still see everything in the calendar app you already use.",
+      "Link your Google Calendar once. From then on, every session you book in Breedbase appears in your calendar instantly. Edit or cancel in Breedbase and your calendar updates. One source of truth — visible in the app you already use.",
   },
   {
     name: "Homework delivery",
     description:
-      "Coming soon — send exercises to clients after sessions, see who's keeping up.",
-    detail:
-      "After a session, assign specific exercises for the client to practice at home. Set frequency, add notes, attach video links. Clients see their homework in a simple portal — no app download required. You see who's completing exercises and who isn't. Nudge the ones who've gone quiet.",
+      "After a session, assign specific exercises for the client to practise at home. Clients see their homework in a simple portal — no app download required. You see who's completing exercises and who isn't.",
     comingSoon: true,
   },
   {
     name: "Invoicing & payments",
     description:
-      "Coming soon — generate invoices from completed sessions, get paid online.",
-    detail:
-      "Every completed session becomes an invoice with one tap. Send it directly to the client. They pay online. You get notified. No more chasing, no more wondering whether they got the bank transfer details, no more mental arithmetic at the end of the month.",
+      "Every completed session becomes an invoice with one tap. Send it directly to the client. They pay online. No more chasing, no more wondering if they got the bank transfer details.",
     comingSoon: true,
   },
 ];
@@ -63,85 +50,116 @@ const features = [
 export default function FeaturesPage() {
   return (
     <>
-      {/* ── Page hero ─────────────────────────────────────────── */}
-      <section className="bg-near-black pt-[120px] pb-[80px] lg:pt-[140px] lg:pb-[100px]">
+      {/* Hero */}
+      <section
+        className="pt-[120px] pb-[80px] lg:pt-[140px]"
+        style={{ background: "var(--color-teal)" }}
+      >
         <div className="max-w-site mx-auto px-6 lg:px-10">
-          <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-dark-muted mb-8">
-            Features
+          <p
+            className="font-inter text-[11px] font-semibold uppercase tracking-[0.12em] mb-8"
+            style={{ color: "rgba(255,255,255,0.4)" }}
+          >
+            FEATURES
           </p>
-          <h1 className="font-fraunces text-[48px] sm:text-[58px] lg:text-[68px] leading-[1.04] tracking-[-0.02em] text-white mb-5 max-w-[720px]">
+          <h1
+            className="font-fraunces font-medium text-[48px] lg:text-[64px] leading-[1.04] text-white mb-5 max-w-[720px]"
+          >
             Built around how you actually work.
           </h1>
-          <p className="font-manrope text-[17px] lg:text-[18px] text-dark-muted leading-[1.6] max-w-[520px]">
+          <p
+            className="font-inter text-[17px] leading-[1.6] max-w-[520px]"
+            style={{ color: "rgba(255,255,255,0.7)" }}
+          >
             Not how a software company thinks you work.
           </p>
         </div>
       </section>
 
-      {/* ── Feature list ─────────────────────────────────────── */}
-      <section className="bg-warm-white py-[80px] lg:py-[100px]">
+      {/* Feature list */}
+      <section className="bg-canvas py-[80px]">
         <div className="max-w-site mx-auto px-6 lg:px-10">
-          {features.map((feature) => (
+          {features.map((feature, i) => (
             <div
               key={feature.name}
-              className={`border-t border-hairline py-10 lg:py-14 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10 transition-opacity ${
-                feature.comingSoon ? "opacity-40" : ""
+              className={`py-10 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 ${
+                feature.comingSoon ? "opacity-50" : ""
               }`}
+              style={{
+                borderTop: "1px solid var(--color-border)",
+                borderBottom:
+                  i === features.length - 1
+                    ? "1px solid var(--color-border)"
+                    : "none",
+              }}
             >
-              {/* Left column */}
               <div className="md:col-span-4">
-                <div className="flex items-center gap-3 flex-wrap mb-3">
-                  <h2 className="font-fraunces text-[24px] lg:text-[28px] text-ink leading-snug">
+                <div className="flex items-center gap-3 flex-wrap">
+                  <h2
+                    className="font-fraunces font-medium text-[26px] leading-snug"
+                    style={{ color: "var(--color-teal)" }}
+                  >
                     {feature.name}
                   </h2>
                   {feature.comingSoon && (
-                    <span className="font-manrope text-[9px] uppercase tracking-[0.12em] bg-surface text-muted px-2 py-1">
+                    <span
+                      className="font-inter text-[11px] uppercase tracking-[0.08em] px-2 py-0.5 rounded-none"
+                      style={{
+                        background: "var(--color-teal-light)",
+                        color: "var(--color-teal)",
+                      }}
+                    >
                       Coming soon
                     </span>
                   )}
                 </div>
-                <p className="font-manrope text-[14px] text-muted leading-[1.6] italic">
-                  {feature.description}
-                </p>
               </div>
-              {/* Right column */}
               <div className="md:col-span-8">
-                <p className="font-manrope text-[16px] lg:text-[17px] text-muted leading-[1.75]">
-                  {feature.detail}
+                <p
+                  className="font-inter text-[17px] leading-[1.7]"
+                  style={{ color: "var(--color-text-muted)" }}
+                >
+                  {feature.description}
                 </p>
               </div>
             </div>
           ))}
-          <div className="border-t border-hairline" />
         </div>
       </section>
 
-      {/* ── CTA section ──────────────────────────────────────── */}
-      <section className="bg-near-black py-[80px] lg:py-[120px]">
+      {/* CTA */}
+      <section
+        className="py-[80px] lg:py-[120px]"
+        style={{ background: "var(--color-charcoal-dark)" }}
+      >
         <div className="max-w-site mx-auto px-6 lg:px-10">
-          <div className="max-w-[640px]">
-            <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-dark-muted mb-8">
-              Early access
-            </p>
-            <h2 className="font-fraunces text-[38px] sm:text-[48px] lg:text-[56px] leading-[1.06] tracking-[-0.02em] text-white mb-6 lg:mb-8">
-              An embarrassingly good deal.
-            </h2>
-            <p className="font-manrope text-[17px] text-dark-muted leading-[1.7] mb-10">
-              The first 20 trainers get 6 months completely free. After that,
-              £10/month — locked for life.
-            </p>
-            <div>
-              <a
-                href="https://app.breedbase.com/register"
-                className="inline-block bg-accent text-near-black font-manrope text-[14px] font-semibold px-6 py-3.5 hover:opacity-80 transition-opacity"
-              >
-                Claim your spot
-              </a>
-              <p className="mt-3 font-manrope text-[12px] text-dark-muted">
-                20 spots. No credit card. No contracts.
-              </p>
-            </div>
+          <p
+            className="font-inter text-[11px] font-semibold uppercase tracking-[0.12em] mb-4"
+            style={{ color: "rgba(255,255,255,0.4)" }}
+          >
+            EARLY ACCESS
+          </p>
+          <h2 className="font-fraunces font-medium text-[40px] lg:text-[52px] text-white">
+            An embarrassingly good deal.
+          </h2>
+          <p
+            className="font-inter text-[17px] leading-[1.7] max-w-[580px] mt-6"
+            style={{ color: "rgba(255,255,255,0.7)" }}
+          >
+            The first 20 trainers get 6 months completely free. After that,
+            £10/month — locked for life.
+          </p>
+          <div className="mt-10">
+            <Button variant="secondary" href="https://app.breedbase.com/signup">
+              Claim your spot
+            </Button>
           </div>
+          <p
+            className="font-inter text-[13px] mt-3"
+            style={{ color: "rgba(255,255,255,0.5)" }}
+          >
+            20 spots. No credit card. No contracts.
+          </p>
         </div>
       </section>
     </>

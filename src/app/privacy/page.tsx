@@ -7,37 +7,51 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className="bg-warm-white min-h-screen pt-[64px]">
+    <div className="bg-canvas min-h-screen pt-[64px]">
       <div className="max-w-[680px] mx-auto px-6 py-[80px] lg:py-[100px]">
         {/* Wordmark */}
         <Link
           href="/"
-          className="font-fraunces text-[18px] text-ink hover:opacity-70 transition-opacity block mb-12"
+          className="font-fraunces text-[18px] block mb-12 transition-colors"
+          style={{ color: "var(--color-charcoal-dark)" }}
+          onMouseEnter={undefined}
         >
           Breedbase
         </Link>
 
-        <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-muted mb-6">
-          Privacy policy
+        <p
+          className="font-inter text-[11px] font-semibold uppercase tracking-[0.12em] mb-4"
+          style={{ color: "var(--color-text-muted)" }}
+        >
+          PRIVACY POLICY
         </p>
-        <h1 className="font-fraunces text-[40px] lg:text-[48px] leading-[1.08] tracking-[-0.02em] text-ink mb-3">
+        <h1
+          className="font-fraunces text-[40px] lg:text-[48px] leading-[1.08]"
+          style={{ color: "var(--color-charcoal-dark)" }}
+        >
           Privacy Policy
         </h1>
-        <p className="font-manrope text-[13px] text-muted mb-12">
+        <p
+          className="font-inter text-[13px] mt-2 mb-12"
+          style={{ color: "var(--color-text-muted)" }}
+        >
           Last updated: March 2026
         </p>
 
-        <div className="border-t border-hairline pt-8">
-          <p className="font-manrope text-[16px] text-muted leading-[1.75]">
-            This privacy policy is being updated to reflect our current
-            practices. Please check back soon.
-          </p>
-          <p className="font-manrope text-[16px] text-muted leading-[1.75] mt-4">
-            In the meantime, if you have any questions about how we handle your
-            data, please contact us at{" "}
+        <div
+          className="pt-8"
+          style={{ borderTop: "1px solid var(--color-border)" }}
+        >
+          <p
+            className="font-inter text-[16px] leading-[1.75]"
+            style={{ color: "var(--color-text-muted)" }}
+          >
+            This policy is being updated. Please check back soon or contact us
+            at{" "}
             <a
               href="mailto:hello@breedbase.com"
-              className="text-ink underline underline-offset-2"
+              className="underline underline-offset-2 transition-colors"
+              style={{ color: "var(--color-teal)" }}
             >
               hello@breedbase.com
             </a>
@@ -45,11 +59,11 @@ export default function PrivacyPage() {
           </p>
         </div>
 
-        {/* Back link */}
-        <div className="mt-16 pt-8 border-t border-hairline">
+        <div className="mt-16">
           <Link
             href="/"
-            className="font-manrope text-[14px] text-muted hover:text-ink transition-colors"
+            className="font-inter text-[14px] transition-colors"
+            style={{ color: "var(--color-teal)" }}
           >
             ← Back to home
           </Link>
