@@ -4,34 +4,34 @@ import { Button } from "@/components/button";
 export const metadata: Metadata = {
   title: "Features — Breedbase",
   description:
-    "Scheduling, client records, training programmes, session notes, and more — built around how dog trainers actually work.",
+    "Scheduling, client records, session notes, post-visit updates, and invoicing — built around how dog trainers actually work.",
 };
 
 const features = [
   {
     name: "Scheduling",
     description:
-      "Book assessments, 1:1s, follow-ups, and group classes from your phone in under a minute. Every session type is there — you pick the type, the client, the date, and you're done. Syncs with Google Calendar automatically so you're never managing two diaries at once.",
+      "Book solo walks, group walks, 1:1 training, group classes, drop-ins, and boarding from your phone in under a minute. Every session type is there — colour-coded so your week is readable at a glance. You pick the type, the client, the date, and you're done.",
   },
   {
     name: "Client & dog profiles",
     description:
-      "Every client, every dog, every session — in one place. Breed, vaccination status, behavioural history, emergency contacts, who the owner is — lives in Breedbase. Search any client or dog in seconds. See their full history at a glance before a session.",
+      "Every client, every dog, every session — in one place. Breed, vaccination status with expiry alerts, behavioural history, emergency contacts — lives in Breedbase. Search any client or dog in seconds. See their full history at a glance before a session.",
   },
   {
-    name: "Training programmes",
+    name: "Session notes & behaviour log",
     description:
-      "Create a 6-week reactive dog programme, a puppy foundation course, or a custom plan for a specific behavioural issue. Each programme has sessions, each session has objectives and notes. Mark sessions complete as you go and see where every dog is on their programme.",
+      "After a session, open the dog's profile and write your notes directly. Tag the behaviour areas you worked on — reactivity, recall, leash manners, separation anxiety, and more. Notes are attached to that session, date-stamped, and permanent. Six months later when someone asks where you left off — you know. When a dog gets referred to a vet, you have the full history ready.",
   },
   {
-    name: "Session notes",
+    name: "Post-visit updates in seconds",
     description:
-      "After a session, open the dog's profile and write your notes directly. They're attached to that session, date-stamped, and permanent. Six months later when someone asks where you left off — you know. When a dog gets referred to a vet, you have the full history ready.",
+      "Every dog walker sends individual updates to owners after each walk. Most do it manually — typing a message, finding a photo, copying a number, sending on WhatsApp — for every dog, every day.\n\nBreedbase automates it. Mark a session complete, attach your photo, and Breedbase pre-writes the update message for you. One tap shares it directly via WhatsApp or SMS. The owner gets a professional update. You save five minutes per dog, every single day.\n\nAt ten dogs a day, that's nearly an hour back.",
   },
   {
-    name: "Google Calendar sync",
+    name: "Invoicing",
     description:
-      "Link your Google Calendar once. From then on, every session you book in Breedbase appears in your calendar instantly. Edit or cancel in Breedbase and your calendar updates. One source of truth — visible in the app you already use.",
+      "Every completed session becomes an invoice with one tap. Send it directly to the client. Track what's draft, sent, and paid. No more chasing, no more wondering if they got the bank transfer details.",
   },
   {
     name: "Homework delivery",
@@ -40,9 +40,9 @@ const features = [
     comingSoon: true,
   },
   {
-    name: "Invoicing & payments",
+    name: "Payment collection",
     description:
-      "Every completed session becomes an invoice with one tap. Send it directly to the client. They pay online. No more chasing, no more wondering if they got the bank transfer details.",
+      "Accept card payments directly through Breedbase via Stripe. Get paid the moment you send an invoice.",
     comingSoon: true,
   },
 ];

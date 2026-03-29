@@ -5,22 +5,22 @@ const features = [
   {
     name: "Scheduling",
     description:
-      "Book assessments, 1:1s, follow-ups, and group classes from your phone in under a minute. Syncs with Google Calendar automatically. Never manage two diaries again.",
+      "Book solo walks, group classes, 1:1 training, drop-ins, and boarding from your phone in under a minute. Colour-coded by session type. Never manage two diaries again.",
   },
   {
     name: "Client & dog profiles",
     description:
-      "Every client, every dog, every session — in one place. Breed, vaccination records, behavioural history, emergency contacts. The stuff that lives in your head right now.",
-  },
-  {
-    name: "Training programmes",
-    description:
-      "Structure a 6-week programme for a reactive dog or a puppy foundation course — and track real progress session by session. Not just dates. Actual development.",
+      "Every client, every dog, every session — in one place. Breed, vaccination records with expiry alerts, behavioural history, emergency contacts. The stuff that lives in your head right now.",
   },
   {
     name: "Session notes",
     description:
-      "Log what happened while it's fresh. Notes attach to the dog's record automatically. Six months later, you'll know exactly where you left off.",
+      "Log what happened while it's fresh. Tag behaviour areas covered — reactivity, recall, leash manners, and more. Notes attach to the dog's record automatically. Six months later, you'll know exactly where you left off.",
+  },
+  {
+    name: "Post-visit updates in seconds",
+    description:
+      "Complete a session, attach a photo, and send the owner a WhatsApp update — all in under 30 seconds. No more typing individual messages after every walk.",
   },
   {
     name: "Homework delivery",
@@ -29,10 +29,9 @@ const features = [
     comingSoon: true,
   },
   {
-    name: "Invoicing & payments",
+    name: "Invoicing",
     description:
-      "Generate invoices from completed sessions, get paid online, stop chasing.",
-    comingSoon: true,
+      "Create invoices from completed sessions, track what's draft, sent, and paid. No more wondering whether they got the bank transfer details.",
   },
 ];
 
@@ -69,8 +68,8 @@ export default function Home() {
                 className="font-inter text-[17px] leading-[1.7] max-w-[480px] mt-6"
                 style={{ color: "var(--color-text-muted)" }}
               >
-                Breedbase handles your scheduling, client records, and training
-                programmes — built for dog trainers, not adapted from something
+                Breedbase handles your scheduling, client records, and session
+                notes — built for dog trainers, not adapted from something
                 else.
               </p>
               <div className="mt-10">
