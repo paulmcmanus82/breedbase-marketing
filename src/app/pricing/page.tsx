@@ -40,7 +40,7 @@ export default function PricingPage() {
       {/* ── Page hero ─────────────────────────────────────────── */}
       <section className="bg-near-black pt-[120px] pb-[80px] lg:pt-[140px] lg:pb-[100px]">
         <div className="max-w-site mx-auto px-6 lg:px-10">
-          <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-dark-muted mb-8">
+          <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-dark-muted mb-8">
             Pricing
           </p>
           <h1 className="font-fraunces text-[48px] sm:text-[58px] lg:text-[68px] leading-[1.04] tracking-[-0.02em] text-white max-w-[640px]">
@@ -55,7 +55,7 @@ export default function PricingPage() {
           <div className="max-w-[560px]">
             {/* Plan box — sharp corners, clean border */}
             <div className="border border-dark-border p-8 lg:p-10">
-              <p className="font-inter text-[10px] uppercase tracking-[0.2em] text-muted mb-6">
+              <p className="font-manrope text-[10px] uppercase tracking-[0.2em] text-muted mb-6">
                 Founding trainer
               </p>
 
@@ -64,14 +64,14 @@ export default function PricingPage() {
                 <span className="font-fraunces text-[72px] lg:text-[80px] leading-none text-ink tracking-[-0.03em]">
                   Free
                 </span>
-                <span className="font-inter text-[16px] text-muted leading-tight">
+                <span className="font-manrope text-[16px] text-muted leading-tight">
                   for 6<br />months
                 </span>
               </div>
-              <p className="font-inter text-[15px] text-muted mb-1">
+              <p className="font-manrope text-[15px] text-muted mb-1">
                 Then £10/month — locked for life.
               </p>
-              <p className="font-inter text-[13px] text-muted italic mb-8">
+              <p className="font-manrope text-[13px] text-muted italic mb-8">
                 First 20 trainers only.
               </p>
 
@@ -79,10 +79,10 @@ export default function PricingPage() {
               <div className="space-y-3 mb-10">
                 {includedFeatures.map((feature) => (
                   <div key={feature} className="flex items-start gap-3">
-                    <span className="font-inter text-[15px] text-muted shrink-0 select-none mt-px">
+                    <span className="font-manrope text-[15px] text-muted shrink-0 select-none mt-px">
                       —
                     </span>
-                    <span className="font-inter text-[15px] text-ink">
+                    <span className="font-manrope text-[15px] text-ink">
                       {feature}
                     </span>
                   </div>
@@ -92,11 +92,11 @@ export default function PricingPage() {
               {/* CTA */}
               <a
                 href="https://app.breedbase.com/register"
-                className="block w-full text-center bg-near-black text-accent font-inter text-[14px] font-semibold py-4 hover:opacity-80 transition-opacity"
+                className="block w-full text-center bg-near-black text-accent font-manrope text-[14px] font-semibold py-4 hover:opacity-80 transition-opacity"
               >
                 Claim your free spot
               </a>
-              <p className="mt-3 font-inter text-[12px] text-muted text-center">
+              <p className="mt-3 font-manrope text-[12px] text-muted text-center">
                 20 spots. No credit card required.
               </p>
             </div>
@@ -108,16 +108,16 @@ export default function PricingPage() {
       <section className="bg-warm-white pb-[80px] lg:pb-[120px]">
         <div className="max-w-site mx-auto px-6 lg:px-10">
           <div className="border-t border-hairline pt-12 lg:pt-16 max-w-[640px]">
-            <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-muted mb-10">
+            <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-muted mb-10">
               Questions
             </p>
             <div className="space-y-10">
               {faqs.map(({ q, a }) => (
                 <div key={q}>
-                  <p className="font-inter text-[16px] font-semibold text-ink mb-2 leading-snug">
+                  <p className="font-manrope text-[16px] font-semibold text-ink mb-2 leading-snug">
                     {q}
                   </p>
-                  <p className="font-inter text-[15px] text-muted leading-[1.7]">
+                  <p className="font-manrope text-[15px] text-muted leading-[1.7]">
                     {a}
                   </p>
                 </div>

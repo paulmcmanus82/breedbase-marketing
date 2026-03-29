@@ -50,14 +50,14 @@ export function AppMockup() {
         style={{ transform: "rotate(2deg) translateY(8px)" }}
       >
         <div className="flex items-center gap-2.5 mb-3">
-          <div className="w-8 h-8 bg-accent flex items-center justify-center text-[11px] font-semibold text-near-black font-inter shrink-0">
+          <div className="w-8 h-8 bg-accent flex items-center justify-center text-[11px] font-semibold text-near-black font-manrope shrink-0">
             SW
           </div>
           <div className="min-w-0">
-            <p className="text-xs font-semibold text-ink font-inter truncate">
+            <p className="text-xs font-semibold text-ink font-manrope truncate">
               Sophie W.
             </p>
-            <p className="text-[11px] text-muted font-inter">
+            <p className="text-[11px] text-muted font-manrope">
               Biscuit · Labrador
             </p>
           </div>
@@ -69,8 +69,8 @@ export function AppMockup() {
             { label: "Progress", value: "Week 3 of 6" },
           ].map(({ label, value }) => (
             <div key={label} className="flex justify-between items-center">
-              <span className="text-[11px] text-muted font-inter">{label}</span>
-              <span className="text-[11px] font-medium text-ink font-inter">
+              <span className="text-[11px] text-muted font-manrope">{label}</span>
+              <span className="text-[11px] font-medium text-ink font-manrope">
                 {value}
               </span>
             </div>
@@ -80,7 +80,7 @@ export function AppMockup() {
         <div className="h-1 bg-surface overflow-hidden">
           <div className="h-full bg-accent" style={{ width: "50%" }} />
         </div>
-        <p className="text-[10px] text-muted font-inter mt-1.5">50% complete</p>
+        <p className="text-[10px] text-muted font-manrope mt-1.5">50% complete</p>
       </div>
 
       {/* Main schedule card */}
@@ -91,10 +91,10 @@ export function AppMockup() {
         {/* Dark header */}
         <div className="bg-near-black px-4 pt-4 pb-3">
           <div className="flex items-center justify-between mb-3">
-            <span className="font-inter text-[11px] font-semibold text-dark-muted uppercase tracking-widest">
+            <span className="font-manrope text-[11px] font-semibold text-dark-muted uppercase tracking-widest">
               Today
             </span>
-            <span className="font-inter text-[11px] text-dark-muted">
+            <span className="font-manrope text-[11px] text-dark-muted">
               Wed 4 June
             </span>
           </div>
@@ -108,7 +108,7 @@ export function AppMockup() {
                 }`}
               >
                 <p
-                  className={`text-[9px] leading-none mb-0.5 font-inter font-medium ${
+                  className={`text-[9px] leading-none mb-0.5 font-manrope font-medium ${
                     active ? "text-near-black" : "text-dark-muted"
                   }`}
                 >
@@ -130,18 +130,18 @@ export function AppMockup() {
         <div className="divide-y divide-[#F5F5F2]">
           {sessions.map(({ time, client, dog, type, color }) => (
             <div key={time} className="flex items-stretch gap-0 px-4 py-2.5">
-              <div className="w-[52px] text-[11px] text-muted font-inter pt-0.5 shrink-0">
+              <div className="w-[52px] text-[11px] text-muted font-manrope pt-0.5 shrink-0">
                 {time}
               </div>
               <div
                 className="flex-1 pl-3 border-l-[2.5px]"
                 style={{ borderLeftColor: color }}
               >
-                <p className="text-[12px] font-semibold text-ink font-inter leading-snug">
+                <p className="text-[12px] font-semibold text-ink font-manrope leading-snug">
                   {client}
                   <span className="font-normal text-muted"> · {dog}</span>
                 </p>
-                <p className="text-[11px] text-muted font-inter mt-0.5">
+                <p className="text-[11px] text-muted font-manrope mt-0.5">
                   {type}
                 </p>
               </div>
@@ -151,7 +151,7 @@ export function AppMockup() {
 
         {/* Footer hint */}
         <div className="px-4 py-3 border-t border-[#F5F5F2] bg-[#FAFAF7]">
-          <p className="text-[11px] text-muted font-inter">
+          <p className="text-[11px] text-muted font-manrope">
             4 sessions today · 2 notes pending
           </p>
         </div>
@@ -159,7 +159,7 @@ export function AppMockup() {
 
       {/* Notification pill — floating bottom-left of the cluster */}
       <div
-        className="absolute bottom-8 lg:bottom-4 left-4 lg:left-0 bg-near-black text-white font-inter text-[11px] px-3 py-2 shadow-lg flex items-center gap-2 z-20"
+        className="absolute bottom-8 lg:bottom-4 left-4 lg:left-0 bg-near-black text-white font-manrope text-[11px] px-3 py-2 shadow-lg flex items-center gap-2 z-20"
         style={{ transform: "rotate(-0.5deg)" }}
       >
         <span

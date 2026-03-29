@@ -66,13 +66,13 @@ export default function FeaturesPage() {
       {/* ── Page hero ─────────────────────────────────────────── */}
       <section className="bg-near-black pt-[120px] pb-[80px] lg:pt-[140px] lg:pb-[100px]">
         <div className="max-w-site mx-auto px-6 lg:px-10">
-          <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-dark-muted mb-8">
+          <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-dark-muted mb-8">
             Features
           </p>
           <h1 className="font-fraunces text-[48px] sm:text-[58px] lg:text-[68px] leading-[1.04] tracking-[-0.02em] text-white mb-5 max-w-[720px]">
             Built around how you actually work.
           </h1>
-          <p className="font-inter text-[17px] lg:text-[18px] text-dark-muted leading-[1.6] max-w-[520px]">
+          <p className="font-manrope text-[17px] lg:text-[18px] text-dark-muted leading-[1.6] max-w-[520px]">
             Not how a software company thinks you work.
           </p>
         </div>
@@ -95,18 +95,18 @@ export default function FeaturesPage() {
                     {feature.name}
                   </h2>
                   {feature.comingSoon && (
-                    <span className="font-inter text-[9px] uppercase tracking-[0.12em] bg-surface text-muted px-2 py-1">
+                    <span className="font-manrope text-[9px] uppercase tracking-[0.12em] bg-surface text-muted px-2 py-1">
                       Coming soon
                     </span>
                   )}
                 </div>
-                <p className="font-inter text-[14px] text-muted leading-[1.6] italic">
+                <p className="font-manrope text-[14px] text-muted leading-[1.6] italic">
                   {feature.description}
                 </p>
               </div>
               {/* Right column */}
               <div className="md:col-span-8">
-                <p className="font-inter text-[16px] lg:text-[17px] text-muted leading-[1.75]">
+                <p className="font-manrope text-[16px] lg:text-[17px] text-muted leading-[1.75]">
                   {feature.detail}
                 </p>
               </div>
@@ -120,24 +120,24 @@ export default function FeaturesPage() {
       <section className="bg-near-black py-[80px] lg:py-[120px]">
         <div className="max-w-site mx-auto px-6 lg:px-10">
           <div className="max-w-[640px]">
-            <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-dark-muted mb-8">
+            <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-dark-muted mb-8">
               Early access
             </p>
             <h2 className="font-fraunces text-[38px] sm:text-[48px] lg:text-[56px] leading-[1.06] tracking-[-0.02em] text-white mb-6 lg:mb-8">
               An embarrassingly good deal.
             </h2>
-            <p className="font-inter text-[17px] text-dark-muted leading-[1.7] mb-10">
+            <p className="font-manrope text-[17px] text-dark-muted leading-[1.7] mb-10">
               The first 20 trainers get 6 months completely free. After that,
               £10/month — locked for life.
             </p>
             <div>
               <a
                 href="https://app.breedbase.com/register"
-                className="inline-block bg-accent text-near-black font-inter text-[14px] font-semibold px-6 py-3.5 hover:opacity-80 transition-opacity"
+                className="inline-block bg-accent text-near-black font-manrope text-[14px] font-semibold px-6 py-3.5 hover:opacity-80 transition-opacity"
               >
                 Claim your spot
               </a>
-              <p className="mt-3 font-inter text-[12px] text-dark-muted">
+              <p className="mt-3 font-manrope text-[12px] text-dark-muted">
                 20 spots. No credit card. No contracts.
               </p>
             </div>

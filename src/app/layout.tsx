@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Fraunces, Manrope } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
@@ -11,9 +11,9 @@ const fraunces = Fraunces({
   axes: ["opsz"],
 });
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-manrope",
   display: "swap",
 });
 
@@ -37,8 +37,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
-      <body className="font-inter bg-warm-white text-ink antialiased">
+    <html lang="en" className={`${fraunces.variable} ${manrope.variable}`}>
+      <body className="font-manrope bg-warm-white text-ink antialiased">
         <Nav />
         <main>{children}</main>
         <Footer />

@@ -42,13 +42,13 @@ export function Nav() {
           <div className="hidden md:flex items-center gap-6">
             <a
               href="https://app.breedbase.com/login"
-              className="text-sm font-inter text-muted hover:text-ink transition-colors"
+              className="text-sm font-manrope text-muted hover:text-ink transition-colors"
             >
               Sign in
             </a>
             <a
               href="https://app.breedbase.com/register"
-              className="text-sm font-inter bg-near-black text-accent px-4 py-2.5 hover:opacity-80 transition-opacity"
+              className="text-sm font-manrope bg-near-black text-accent px-4 py-2.5 hover:opacity-80 transition-opacity"
             >
               Get early access
             </a>
@@ -103,21 +103,21 @@ export function Nav() {
           <div className="border-t border-hairline pt-8 space-y-4">
             <a
               href="https://app.breedbase.com/login"
-              className="block font-inter text-[18px] text-muted"
+              className="block font-manrope text-[18px] text-muted"
               onClick={() => setMobileOpen(false)}
             >
               Sign in
             </a>
             <a
               href="https://app.breedbase.com/register"
-              className="inline-block bg-near-black text-accent font-inter text-sm px-6 py-3.5"
+              className="inline-block bg-near-black text-accent font-manrope text-sm px-6 py-3.5"
               onClick={() => setMobileOpen(false)}
             >
               Get early access
             </a>
           </div>
           <div className="mt-auto">
-            <p className="text-xs text-muted font-inter">
+            <p className="text-xs text-muted font-manrope">
               Built for professional dog trainers in the UK.
             </p>
           </div>

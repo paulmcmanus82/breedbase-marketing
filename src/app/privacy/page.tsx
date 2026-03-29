@@ -17,22 +17,22 @@ export default function PrivacyPage() {
           Breedbase
         </Link>
 
-        <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-muted mb-6">
+        <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-muted mb-6">
           Privacy policy
         </p>
         <h1 className="font-fraunces text-[40px] lg:text-[48px] leading-[1.08] tracking-[-0.02em] text-ink mb-3">
           Privacy Policy
         </h1>
-        <p className="font-inter text-[13px] text-muted mb-12">
+        <p className="font-manrope text-[13px] text-muted mb-12">
           Last updated: March 2026
         </p>
 
         <div className="border-t border-hairline pt-8">
-          <p className="font-inter text-[16px] text-muted leading-[1.75]">
+          <p className="font-manrope text-[16px] text-muted leading-[1.75]">
             This privacy policy is being updated to reflect our current
             practices. Please check back soon.
           </p>
-          <p className="font-inter text-[16px] text-muted leading-[1.75] mt-4">
+          <p className="font-manrope text-[16px] text-muted leading-[1.75] mt-4">
             In the meantime, if you have any questions about how we handle your
             data, please contact us at{" "}
             <a
@@ -49,7 +49,7 @@ export default function PrivacyPage() {
         <div className="mt-16 pt-8 border-t border-hairline">
           <Link
             href="/"
-            className="font-inter text-[14px] text-muted hover:text-ink transition-colors"
+            className="font-manrope text-[14px] text-muted hover:text-ink transition-colors"
           >
             ← Back to home
           </Link>

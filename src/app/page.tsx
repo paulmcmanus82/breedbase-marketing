@@ -45,14 +45,14 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-6 items-center">
             {/* Left — 7 cols */}
             <div className="lg:col-span-7">
-              <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-muted mb-6 lg:mb-8">
+              <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-muted mb-6 lg:mb-8">
                 The business tool for dog trainers
               </p>
               <h1 className="font-fraunces text-[48px] sm:text-[60px] lg:text-[76px] xl:text-[84px] leading-[1.02] tracking-[-0.02em] text-ink mb-6 lg:mb-8">
                 Stop running your business on a WhatsApp thread{" "}
                 <span className="text-accent">and a prayer.</span>
               </h1>
-              <p className="font-inter text-[17px] lg:text-[18px] text-muted leading-[1.6] max-w-[480px] mb-8 lg:mb-10">
+              <p className="font-manrope text-[17px] lg:text-[18px] text-muted leading-[1.6] max-w-[480px] mb-8 lg:mb-10">
                 Breedbase handles your scheduling, client records, and training
                 programmes — built for dog trainers, not adapted from something
                 else.
@@ -60,11 +60,11 @@ export default function Home() {
               <div>
                 <a
                   href="https://app.breedbase.com/register"
-                  className="inline-block bg-near-black text-accent font-inter text-[14px] font-medium px-6 py-3.5 hover:opacity-80 transition-opacity"
+                  className="inline-block bg-near-black text-accent font-manrope text-[14px] font-medium px-6 py-3.5 hover:opacity-80 transition-opacity"
                 >
                   Get 6 months free
                 </a>
-                <p className="mt-3 font-inter text-[12px] text-muted">
+                <p className="mt-3 font-manrope text-[12px] text-muted">
                   First 20 trainers only · No credit card · £10/month after
                 </p>
               </div>
@@ -81,7 +81,7 @@ export default function Home() {
       {/* ── Problem section ───────────────────────────────────── */}
       <section className="bg-near-black py-[80px] lg:py-[120px]">
         <div className="max-w-site mx-auto px-6 lg:px-10">
-          <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-dark-muted mb-8 lg:mb-10">
+          <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-dark-muted mb-8 lg:mb-10">
             The reality
           </p>
           <h2 className="font-fraunces text-[42px] sm:text-[52px] lg:text-[60px] leading-[1.05] tracking-[-0.02em] text-white mb-14 lg:mb-16 max-w-[640px]">
@@ -108,7 +108,7 @@ export default function Home() {
                 <p className="font-fraunces text-[80px] lg:text-[96px] leading-none text-dark-border mb-4 select-none">
                   {num}
                 </p>
-                <p className="font-inter text-[17px] text-white leading-[1.6]">
+                <p className="font-manrope text-[17px] text-white leading-[1.6]">
                   {text}
                 </p>
               </div>
@@ -117,7 +117,7 @@ export default function Home() {
 
           {/* Body text */}
           <div className="border-t border-dark-border pt-12">
-            <p className="font-inter text-[17px] lg:text-[18px] text-dark-muted leading-[1.7] max-w-[640px]">
+            <p className="font-manrope text-[17px] lg:text-[18px] text-dark-muted leading-[1.7] max-w-[640px]">
               Most trainers aren't disorganised. They're just using tools that
               were never designed for them. Breedbase was built from scratch for
               how dog trainers actually work — by someone whose wife is one.
@@ -129,7 +129,7 @@ export default function Home() {
       {/* ── Features section ──────────────────────────────────── */}
       <section className="bg-warm-white py-[80px] lg:py-[120px]">
         <div className="max-w-site mx-auto px-6 lg:px-10">
-          <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-muted mb-8 lg:mb-10">
+          <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-muted mb-8 lg:mb-10">
             What you get
           </p>
           <h2 className="font-fraunces text-[40px] sm:text-[48px] lg:text-[56px] leading-[1.05] tracking-[-0.02em] text-ink mb-12 lg:mb-16 max-w-[640px]">
@@ -151,14 +151,14 @@ export default function Home() {
                       {feature.name}
                     </h3>
                     {feature.comingSoon && (
-                      <span className="font-inter text-[9px] uppercase tracking-[0.12em] bg-surface text-muted px-2 py-1">
+                      <span className="font-manrope text-[9px] uppercase tracking-[0.12em] bg-surface text-muted px-2 py-1">
                         Coming soon
                       </span>
                     )}
                   </div>
                 </div>
                 <div className="md:col-span-8 lg:col-span-8">
-                  <p className="font-inter text-[16px] text-muted leading-[1.7]">
+                  <p className="font-manrope text-[16px] text-muted leading-[1.7]">
                     {feature.description}
                   </p>
                 </div>
@@ -173,13 +173,13 @@ export default function Home() {
       <section className="bg-near-black py-[80px] lg:py-[120px]">
         <div className="max-w-site mx-auto px-6 lg:px-10">
           <div className="max-w-[680px]">
-            <p className="font-inter text-[11px] uppercase tracking-[0.18em] text-dark-muted mb-8">
+            <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-dark-muted mb-8">
               Early access
             </p>
             <h2 className="font-fraunces text-[42px] sm:text-[52px] lg:text-[60px] leading-[1.05] tracking-[-0.02em] text-white mb-6 lg:mb-8">
               An embarrassingly good deal.
             </h2>
-            <p className="font-inter text-[17px] lg:text-[18px] text-dark-muted leading-[1.7] mb-10 lg:mb-12">
+            <p className="font-manrope text-[17px] lg:text-[18px] text-dark-muted leading-[1.7] mb-10 lg:mb-12">
               We're in early access. The first 20 trainers get 6 months
               completely free. After that, founding members pay £10/month —
               locked for life. We're doing this because we want trainers who'll
@@ -188,11 +188,11 @@ export default function Home() {
             <div>
               <a
                 href="https://app.breedbase.com/register"
-                className="inline-block bg-accent text-near-black font-inter text-[14px] font-semibold px-6 py-3.5 hover:opacity-80 transition-opacity"
+                className="inline-block bg-accent text-near-black font-manrope text-[14px] font-semibold px-6 py-3.5 hover:opacity-80 transition-opacity"
               >
                 Claim your spot
               </a>
-              <p className="mt-3 font-inter text-[12px] text-dark-muted">
+              <p className="mt-3 font-manrope text-[12px] text-dark-muted">
                 20 spots. No credit card. No contracts.
               </p>
             </div>
@@ -208,11 +208,11 @@ export default function Home() {
           </h2>
           <a
             href="https://app.breedbase.com/register"
-            className="inline-block bg-near-black text-accent font-inter text-[14px] font-medium px-7 py-4 hover:opacity-80 transition-opacity"
+            className="inline-block bg-near-black text-accent font-manrope text-[14px] font-medium px-7 py-4 hover:opacity-80 transition-opacity"
           >
             Get 6 months free
           </a>
-          <p className="mt-3 font-inter text-[12px] text-muted">
+          <p className="mt-3 font-manrope text-[12px] text-muted">
             First 20 trainers only · No credit card required
           </p>
         </div>
