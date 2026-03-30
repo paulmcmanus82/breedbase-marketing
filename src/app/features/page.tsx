@@ -27,32 +27,32 @@ const features = [
   {
     name: "Scheduling",
     description:
-      "Book solo walks, group walks, 1:1 training, group classes, drop-ins, and boarding from your phone in under a minute. Every session type is there — colour-coded so your week is readable at a glance. You pick the type, the client, the date, and you're done.",
-  },
-  {
-    name: "Client & dog profiles",
-    description:
-      "Every client, every dog, every session — in one place. Breed, vaccination status with expiry alerts, behavioural history, emergency contacts — lives in Breedbase. Search any client or dog in seconds. See their full history at a glance before a session.",
-  },
-  {
-    name: "Session notes & behaviour log",
-    description:
-      "After a session, open the dog's profile and write your notes directly. Tag the behaviour areas you worked on — reactivity, recall, leash manners, separation anxiety, and more. Notes are attached to that session, date-stamped, and permanent. Six months later when someone asks where you left off — you know. When a dog gets referred to a vet, you have the full history ready.",
+      "Book solo walks, group walks, 1:1 training, group classes, drop-ins, and boarding from your phone in under a minute. Every session type is there \u2014 colour-coded so your week is readable at a glance. You pick the type, the client, the date, and you\u2019re done.",
   },
   {
     name: "Post-visit updates in seconds",
     description:
-      "Every dog walker sends individual updates to owners after each walk. Most do it manually — typing a message, finding a photo, copying a number, sending on WhatsApp — for every dog, every day.\n\nBreedbase automates it. Mark a session complete, attach your photo, and Breedbase pre-writes the update message for you. One tap shares it directly via WhatsApp or SMS. The owner gets a professional update. You save five minutes per dog, every single day.\n\nAt ten dogs a day, that's nearly an hour back.",
+      "Every dog walker sends individual updates to owners after each walk. Most do it manually \u2014 typing a message, finding a photo, copying a number, sending on WhatsApp \u2014 for every dog, every day.\n\nBreedbase automates it. Mark a session complete, attach your photo, and Breedbase pre-writes the update message for you. One tap shares it directly via WhatsApp or SMS. The owner gets a professional update. You save five minutes per dog, every single day.\n\nAt ten dogs a day, that\u2019s nearly an hour back.",
+  },
+  {
+    name: "Client & dog profiles",
+    description:
+      "Every client, every dog, every session \u2014 in one place. Breed, vaccination records with expiry alerts, behavioural history, emergency contacts. The stuff that lives in your head right now.",
+  },
+  {
+    name: "Session notes & behaviour log",
+    description:
+      "After a session, open the dog\u2019s profile and write your notes directly. Tag the behaviour areas you worked on \u2014 reactivity, recall, leash manners, separation anxiety, and more. Notes are attached to that session, date-stamped, and permanent. Six months later when someone asks where you left off \u2014 you know. When a dog gets referred to a vet, you have the full history ready.",
   },
   {
     name: "Invoicing",
     description:
-      "Every completed session becomes an invoice with one tap. Send it directly to the client. Track what's draft, sent, and paid. No more chasing, no more wondering if they got the bank transfer details.",
+      "Every completed session becomes an invoice with one tap. Send it directly to the client. Track what\u2019s draft, sent, and paid. No more chasing, no more wondering if they got the bank transfer details.",
   },
   {
     name: "Homework delivery",
     description:
-      "After a session, assign specific exercises for the client to practise at home. Clients see their homework in a simple portal — no app download required. You see who's completing exercises and who isn't.",
+      "After a session, assign specific exercises for the client to practise at home. Clients see their homework in a simple portal \u2014 no app download required. You see who\u2019s completing exercises and who isn\u2019t.",
     comingSoon: true,
   },
   {
@@ -132,7 +132,7 @@ export default function FeaturesPage() {
               </div>
               <div className="md:col-span-8">
                 <p
-                  className="font-inter text-[17px] leading-[1.7]"
+                  className="font-inter text-[17px] leading-[1.7] whitespace-pre-line"
                   style={{ color: "var(--color-text-muted)" }}
                 >
                   {feature.description}
@@ -163,10 +163,10 @@ export default function FeaturesPage() {
             style={{ color: "rgba(255,255,255,0.7)" }}
           >
             The first 20 trainers get 6 months completely free. After that,
-            £10/month — locked for life.
+            £10/month &mdash; locked for life.
           </p>
           <div className="mt-10">
-            <Button variant="secondary" href="https://app.breedbase.com/signup">
+            <Button variant="primary" href="https://app.breedbase.com/signup">
               Claim your spot
             </Button>
           </div>

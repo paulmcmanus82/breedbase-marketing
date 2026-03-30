@@ -109,7 +109,7 @@ export default function PrivacyPage() {
 
           <h2 style={heading2}>1. Who We Are</h2>
           <p style={para}>
-            Breedbase is a business management platform for professional dog trainers. We provide scheduling, client management, training plan tools, and calendar integration to help trainers run their businesses.
+            Breedbase is a business management platform for professional dog trainers. We provide scheduling, client management, session notes, and invoicing to help trainers run their businesses.
           </p>
           <p style={para}>
             <strong>Data controller:</strong> Breedbase, United Kingdom<br />
@@ -125,7 +125,7 @@ export default function PrivacyPage() {
           <ul style={{ paddingLeft: "24px", marginBottom: "14px" }}>
             <li style={listItem}><strong>Account information:</strong> name, email address, password</li>
             <li style={listItem}><strong>Business information:</strong> business name, phone number</li>
-            <li style={listItem}><strong>Client records:</strong> your clients&apos; names, contact details, emergency contacts, and notes you add about their dogs (breed, health, temperament, vaccination status)</li>
+            <li style={listItem}><strong>Client records:</strong> your clients&rsquo; names, contact details, emergency contacts, and notes you add about their dogs (breed, health, temperament, vaccination status)</li>
             <li style={listItem}><strong>Session data:</strong> scheduled appointments, session notes, training plans, and progress records</li>
             <li style={listItem}><strong>Payment information:</strong> processed securely by Stripe; we do not store card numbers</li>
           </ul>
@@ -136,11 +136,6 @@ export default function PrivacyPage() {
             <li style={listItem}><strong>Log data:</strong> IP address, access times, error logs for debugging</li>
           </ul>
 
-          <h3 style={heading3}>Data from third-party integrations</h3>
-          <ul style={{ paddingLeft: "24px", marginBottom: "14px" }}>
-            <li style={listItem}><strong>Google Calendar:</strong> when you connect your Google Calendar, we access your calendar list and create, update, or delete events in your chosen calendar to mirror your Breedbase sessions. We do not read or modify any existing events that were not created by Breedbase.</li>
-          </ul>
-
           <hr style={rule} />
 
           <h2 style={heading2}>3. How We Use Your Data</h2>
@@ -148,7 +143,6 @@ export default function PrivacyPage() {
           <ul style={{ paddingLeft: "24px", marginBottom: "14px" }}>
             <li style={listItem}>Provide the Breedbase platform and its features</li>
             <li style={listItem}>Manage your account and authenticate your sessions</li>
-            <li style={listItem}>Sync your sessions with Google Calendar when you enable this integration</li>
             <li style={listItem}>Send transactional emails (session reminders, invoices, password resets)</li>
             <li style={listItem}>Improve our platform based on aggregate, anonymised usage patterns</li>
             <li style={listItem}>Respond to support requests</li>
@@ -158,7 +152,6 @@ export default function PrivacyPage() {
             <li style={listItem}>Sell your personal data to third parties</li>
             <li style={listItem}>Use your data for advertising</li>
             <li style={listItem}>Share your client records with anyone other than you</li>
-            <li style={listItem}>Access your Google Calendar data for any purpose other than session synchronisation</li>
           </ul>
 
           <hr style={rule} />
@@ -176,7 +169,6 @@ export default function PrivacyPage() {
                 ["Providing the platform", "Performance of contract"],
                 ["Account security and authentication", "Legitimate interest"],
                 ["Session reminders and invoices", "Performance of contract"],
-                ["Google Calendar sync", "Your explicit consent"],
                 ["Usage analytics (anonymised)", "Legitimate interest"],
                 ["Responding to support requests", "Legitimate interest"],
               ].map(([purpose, basis]) => (
@@ -190,49 +182,36 @@ export default function PrivacyPage() {
 
           <hr style={rule} />
 
-          <h2 style={heading2}>5. Google Calendar Integration</h2>
-          <p style={para}>When you choose to connect your Google Calendar:</p>
-          <ul style={{ paddingLeft: "24px", marginBottom: "14px" }}>
-            <li style={listItem}>We request permission to <strong>view your calendar list</strong> (to let you choose which calendar to sync to) and to <strong>create, edit, and delete events</strong> in that calendar</li>
-            <li style={listItem}>We <strong>only</strong> create, modify, or delete events that Breedbase itself created — we never touch your personal events</li>
-            <li style={listItem}>Your Google authentication tokens are stored securely and encrypted at rest</li>
-            <li style={listItem}>You can disconnect your Google Calendar at any time from Settings, which revokes our access immediately</li>
-            <li style={listItem}>Disconnecting removes the stored tokens; events already created in your Google Calendar remain unless you delete them manually</li>
-          </ul>
-
-          <hr style={rule} />
-
-          <h2 style={heading2}>6. Data Storage and Security</h2>
+          <h2 style={heading2}>5. Data Storage and Security</h2>
           <ul style={{ paddingLeft: "24px", marginBottom: "14px" }}>
             <li style={listItem}>Your data is stored on servers in the EU/UK provided by Supabase (database) and Vercel (application hosting)</li>
             <li style={listItem}>All data is encrypted in transit (TLS) and at rest</li>
-            <li style={listItem}>Authentication tokens for third-party services (e.g., Google) are encrypted at rest</li>
+            <li style={listItem}>Authentication tokens for third-party services are encrypted at rest</li>
             <li style={listItem}>We use Supabase Row Level Security to ensure trainers can only access their own data</li>
             <li style={listItem}>We conduct regular security reviews of our infrastructure</li>
           </ul>
 
           <hr style={rule} />
 
-          <h2 style={heading2}>7. Data Retention</h2>
+          <h2 style={heading2}>6. Data Retention</h2>
           <ul style={{ paddingLeft: "24px", marginBottom: "14px" }}>
             <li style={listItem}><strong>Account data:</strong> retained while your account is active, deleted within 30 days of account deletion</li>
             <li style={listItem}><strong>Client records and session data:</strong> retained while your account is active; deleted when you delete them or close your account</li>
-            <li style={listItem}><strong>Google Calendar tokens:</strong> deleted immediately when you disconnect the integration or close your account</li>
             <li style={listItem}><strong>Usage logs:</strong> retained for 90 days for debugging, then deleted</li>
           </ul>
 
           <hr style={rule} />
 
-          <h2 style={heading2}>8. Your Rights</h2>
+          <h2 style={heading2}>7. Your Rights</h2>
           <p style={para}>Under UK GDPR, you have the right to:</p>
           <ul style={{ paddingLeft: "24px", marginBottom: "14px" }}>
             <li style={listItem}><strong>Access</strong> your personal data</li>
             <li style={listItem}><strong>Correct</strong> inaccurate data</li>
             <li style={listItem}><strong>Delete</strong> your data (&ldquo;right to be forgotten&rdquo;)</li>
             <li style={listItem}><strong>Export</strong> your data in a portable format</li>
-            <li style={listItem}><strong>Withdraw consent</strong> for optional processing (e.g., Google Calendar sync)</li>
+            <li style={listItem}><strong>Withdraw consent</strong> for optional processing</li>
             <li style={listItem}><strong>Object</strong> to processing based on legitimate interest</li>
-            <li style={listItem}><strong>Lodge a complaint</strong> with the Information Commissioner&apos;s Office (ICO)</li>
+            <li style={listItem}><strong>Lodge a complaint</strong> with the Information Commissioner&rsquo;s Office (ICO)</li>
           </ul>
           <p style={para}>
             To exercise any of these rights, contact{" "}
@@ -241,7 +220,7 @@ export default function PrivacyPage() {
 
           <hr style={rule} />
 
-          <h2 style={heading2}>9. Third-Party Services</h2>
+          <h2 style={heading2}>8. Third-Party Services</h2>
           <p style={para}>We use the following third-party services to operate Breedbase:</p>
           <table style={{ width: "100%", borderCollapse: "collapse", marginBottom: "14px", fontSize: "15px", fontFamily: "var(--font-inter), system-ui, sans-serif" }}>
             <thead>
@@ -256,7 +235,6 @@ export default function PrivacyPage() {
                 ["Supabase", "Database and authentication", "Account data, client records"],
                 ["Vercel", "Application hosting", "Usage data, IP addresses"],
                 ["Stripe", "Payment processing", "Email, payment details"],
-                ["Google Calendar API", "Calendar synchronisation", "Session titles, times, locations"],
                 ["Resend", "Transactional email", "Email addresses, message content"],
               ].map(([service, purpose, data]) => (
                 <tr key={service}>
@@ -271,28 +249,28 @@ export default function PrivacyPage() {
 
           <hr style={rule} />
 
-          <h2 style={heading2}>10. Cookies</h2>
+          <h2 style={heading2}>9. Cookies</h2>
           <p style={para}>
             Breedbase uses only essential cookies required for authentication and session management. We do not use tracking cookies, advertising cookies, or analytics cookies that identify individual users.
           </p>
 
           <hr style={rule} />
 
-          <h2 style={heading2}>11. Changes to This Policy</h2>
+          <h2 style={heading2}>10. Changes to This Policy</h2>
           <p style={para}>
             We may update this policy from time to time. We will notify you of material changes via email or an in-app notice. The &ldquo;last updated&rdquo; date at the top of this page reflects the most recent revision.
           </p>
 
           <hr style={rule} />
 
-          <h2 style={heading2}>12. Contact</h2>
+          <h2 style={heading2}>11. Contact</h2>
           <p style={para}>For any questions about this privacy policy or your data:</p>
           <p style={para}>
             <strong>Email:</strong>{" "}
             <a href="mailto:privacy@breedbase.com" style={link}>privacy@breedbase.com</a>
           </p>
           <p style={{ ...para, marginBottom: 0 }}>
-            For complaints, you may also contact the UK Information Commissioner&apos;s Office at{" "}
+            For complaints, you may also contact the UK Information Commissioner&rsquo;s Office at{" "}
             <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer" style={link}>ico.org.uk</a>.
           </p>
         </div>

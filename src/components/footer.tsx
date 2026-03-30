@@ -62,10 +62,23 @@ export function Footer() {
           style={{ borderTop: "1px solid rgba(255,255,255,0.15)" }}
         >
           <p
-            className="font-inter text-xs"
+            className="font-inter text-[14px] text-center mb-6"
+            style={{ color: "rgba(255,255,255,0.7)" }}
+          >
+            Ready to try it?{" "}
+            <a
+              href="https://app.breedbase.com/signup"
+              className="transition-colors"
+              style={{ color: "#ffffff", textDecoration: "underline", textUnderlineOffset: "3px" }}
+            >
+              Get 6 months free &rarr;
+            </a>
+          </p>
+          <p
+            className="font-inter text-xs text-center"
             style={{ color: "rgba(255,255,255,0.45)" }}
           >
-            © 2026 Breedbase
+            &copy; 2026 Breedbase
           </p>
         </div>
       </div>

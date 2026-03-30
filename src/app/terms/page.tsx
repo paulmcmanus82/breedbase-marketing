@@ -123,7 +123,6 @@ export default function TermsPage() {
             <li style={listItem}>Schedule and track training sessions</li>
             <li style={listItem}>Build and assign training plans</li>
             <li style={listItem}>Generate invoices and accept payments</li>
-            <li style={listItem}>Sync sessions to your Google Calendar</li>
             <li style={listItem}>Import client data via CSV</li>
           </ul>
 
@@ -148,9 +147,9 @@ export default function TermsPage() {
           <p style={para}>By using Breedbase, you agree that:</p>
           <ul style={{ paddingLeft: "24px", marginBottom: "14px" }}>
             <li style={listItem}>You have the legal right to store and process the personal data of your clients, and that you have obtained any necessary consent from them</li>
-            <li style={listItem}>You are responsible for complying with data protection laws (including UK GDPR) in relation to your clients&apos; data</li>
+            <li style={listItem}>You are responsible for complying with data protection laws (including UK GDPR) in relation to your clients&rsquo; data</li>
             <li style={listItem}>You will not use Breedbase for any unlawful purpose</li>
-            <li style={listItem}>You will not attempt to access other users&apos; data or interfere with the platform&apos;s operation</li>
+            <li style={listItem}>You will not attempt to access other users&rsquo; data or interfere with the platform&rsquo;s operation</li>
             <li style={listItem}>The accuracy of the information you enter (client details, health records, vaccination status) is your responsibility — Breedbase does not verify this information</li>
           </ul>
 
@@ -176,7 +175,7 @@ export default function TermsPage() {
             <li style={listItem}>Subscriptions are billed monthly or annually, depending on your chosen plan</li>
             <li style={listItem}>Payments are processed securely by Stripe</li>
             <li style={listItem}>You can cancel your subscription at any time; access continues until the end of your current billing period</li>
-            <li style={listItem}>We may change our pricing with 30 days&apos; notice; existing subscribers will be notified by email before any price change takes effect on their account</li>
+            <li style={listItem}>We may change our pricing with 30 days&rsquo; notice; existing subscribers will be notified by email before any price change takes effect on their account</li>
             <li style={listItem}>Refunds are provided at our discretion for the current billing period if requested within 14 days of a charge</li>
           </ul>
 
@@ -187,14 +186,14 @@ export default function TermsPage() {
             <li style={listItem}>We may offer a free tier or trial period at our discretion</li>
             <li style={listItem}>Free tier features and limits may change at any time</li>
             <li style={listItem}>We may convert free accounts to paid plans with reasonable notice</li>
-            <li style={listItem}>We reserve the right to close inactive free accounts after 12 months of no activity, with 30 days&apos; email notice before deletion</li>
+            <li style={listItem}>We reserve the right to close inactive free accounts after 12 months of no activity, with 30 days&rsquo; email notice before deletion</li>
           </ul>
 
           <hr style={rule} />
 
           <h2 style={heading2}>9. Third-Party Integrations</h2>
           <p style={para}>
-            Breedbase integrates with third-party services including Google Calendar and Stripe. When you connect these services:
+            Breedbase integrates with third-party services including Stripe. When you connect these services:
           </p>
           <ul style={{ paddingLeft: "24px", marginBottom: "14px" }}>
             <li style={listItem}>You are also subject to their respective terms of service and privacy policies</li>

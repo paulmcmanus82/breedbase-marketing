@@ -239,7 +239,7 @@ export function AppMockup() {
               color: "var(--color-teal)",
             }}
           >
-            Synced to Google Calendar · 4 sessions today · 2 notes pending
+            4 sessions today · 2 notes pending
           </span>
         </div>
       </div>

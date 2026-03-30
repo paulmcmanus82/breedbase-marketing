@@ -23,11 +23,13 @@ export const metadata: Metadata = {
   },
 };
 
+const FOUNDING_SPOTS = 20;
+
 const includedFeatures = [
   "Full access to everything built",
-  "Scheduling & Google Calendar sync",
+  "Scheduling & session management",
   "Client & dog profiles",
-  "Training programmes & session notes",
+  "Session notes & behaviour log",
   "Direct input into what gets built next",
   "Guaranteed founder pricing forever",
 ];
@@ -39,7 +41,7 @@ const faqs = [
   },
   {
     q: "What happens after 6 months?",
-    a: "We'll ask for your card and you'll move to £10/month — locked for life as a founding member. You'll get plenty of notice before anything changes.",
+    a: "We\u2019ll ask for your card and you\u2019ll move to £10/month \u2014 locked for life as a founding member. You\u2019ll get plenty of notice before anything changes.",
   },
   {
     q: "What if I want to cancel?",
@@ -47,7 +49,7 @@ const faqs = [
   },
   {
     q: "Is Breedbase only for UK trainers?",
-    a: "For now, yes. We're building specifically for the UK market first.",
+    a: "For now, yes. We\u2019re building specifically for the UK market first.",
   },
 ];
 
@@ -111,13 +113,13 @@ export default function PricingPage() {
                 className="font-inter text-[16px] mt-2"
                 style={{ color: "var(--color-text-muted)" }}
               >
-                Then £10/month — locked for life.
+                Then £10/month &mdash; locked for life.
               </p>
               <p
                 className="font-inter font-semibold text-[14px] mt-1"
                 style={{ color: "var(--color-amber)" }}
               >
-                First 20 trainers only.
+                First {FOUNDING_SPOTS} trainers only.
               </p>
 
               {/* Feature list */}
@@ -131,7 +133,7 @@ export default function PricingPage() {
                       className="font-inter text-[15px] shrink-0 select-none"
                       style={{ color: "var(--color-text-muted)" }}
                     >
-                      —
+                      &mdash;
                     </span>
                     <span
                       className="font-inter text-[15px]"
@@ -157,7 +159,7 @@ export default function PricingPage() {
                 className="font-inter text-[13px] mt-3 text-center"
                 style={{ color: "var(--color-text-muted)" }}
               >
-                20 spots. No credit card required.
+                {FOUNDING_SPOTS} spots. No credit card required.
               </p>
             </div>
           </div>

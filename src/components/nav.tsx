@@ -23,19 +23,11 @@ export function Nav() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled || mobileOpen
-            ? "border-b"
-            : "border-b border-transparent"
-        }`}
-        style={
-          scrolled || mobileOpen
-            ? {
-                background: "var(--color-bg)",
-                borderBottomColor: "var(--color-border)",
-              }
-            : { background: "transparent" }
-        }
+        className="fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300"
+        style={{
+          background: "var(--color-bg)",
+          borderBottomColor: scrolled || mobileOpen ? "var(--color-border)" : "transparent",
+        }}
       >
         <div className="max-w-site mx-auto px-6 lg:px-10 h-[64px] flex items-center justify-between">
           {/* Wordmark */}

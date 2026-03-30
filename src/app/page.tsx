@@ -8,6 +8,11 @@ const features = [
       "Book solo walks, group classes, 1:1 training, drop-ins, and boarding from your phone in under a minute. Colour-coded by session type. Never manage two diaries again.",
   },
   {
+    name: "Post-visit updates in seconds",
+    description:
+      "Complete a session, attach a photo, and send the owner a WhatsApp update — all in under 30 seconds. No more typing individual messages after every walk.",
+  },
+  {
     name: "Client & dog profiles",
     description:
       "Every client, every dog, every session — in one place. Breed, vaccination records with expiry alerts, behavioural history, emergency contacts. The stuff that lives in your head right now.",
@@ -15,23 +20,18 @@ const features = [
   {
     name: "Session notes",
     description:
-      "Log what happened while it's fresh. Tag behaviour areas covered — reactivity, recall, leash manners, and more. Notes attach to the dog's record automatically. Six months later, you'll know exactly where you left off.",
-  },
-  {
-    name: "Post-visit updates in seconds",
-    description:
-      "Complete a session, attach a photo, and send the owner a WhatsApp update — all in under 30 seconds. No more typing individual messages after every walk.",
+      "Log what happened while it\u2019s fresh. Tag behaviour areas covered — reactivity, recall, leash manners, and more. Notes attach to the dog\u2019s record automatically. Six months later, you\u2019ll know exactly where you left off.",
   },
   {
     name: "Homework delivery",
     description:
-      "Send exercises to clients after sessions, see who's keeping up, nudge who isn't.",
+      "Send exercises to clients after sessions, see who\u2019s keeping up, nudge who isn\u2019t.",
     comingSoon: true,
   },
   {
     name: "Invoicing",
     description:
-      "Create invoices from completed sessions, track what's draft, sent, and paid. No more wondering whether they got the bank transfer details.",
+      "Create invoices from completed sessions, track what\u2019s draft, sent, and paid. No more wondering whether they got the bank transfer details.",
   },
 ];
 
@@ -69,7 +69,7 @@ export default function Home() {
                 style={{ color: "var(--color-text-muted)" }}
               >
                 Breedbase handles your scheduling, client records, and session
-                notes — built for dog trainers, not adapted from something
+                notes &mdash; built for dog trainers, not adapted from something
                 else.
               </p>
               <div className="mt-10">
@@ -81,7 +81,7 @@ export default function Home() {
                 className="font-inter text-[13px] mt-3"
                 style={{ color: "var(--color-text-muted)" }}
               >
-                First 20 trainers only · No credit card · £10/month after
+                First 20 trainers only &middot; No credit card &middot; £10/month after
               </p>
             </div>
 
@@ -108,18 +108,18 @@ export default function Home() {
           <h2
             className="font-fraunces font-medium text-[40px] lg:text-[56px] leading-[1.05] text-white mb-14"
           >
-            You&apos;re organised. Your tools aren&apos;t.
+            You&rsquo;re organised. Your tools aren&rsquo;t.
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
             {[
               {
                 n: "01",
-                text: "Your client's address is in a text from six months ago.",
+                text: "Your client\u2019s address is in a text from six months ago.",
               },
               {
                 n: "02",
-                text: "You sent the invoice. You think. You're not sure if they paid.",
+                text: "You sent the invoice. You think. You\u2019re not sure if they paid.",
               },
               {
                 n: "03",
@@ -148,9 +148,9 @@ export default function Home() {
               className="font-inter text-[17px] leading-[1.7] max-w-[640px]"
               style={{ color: "rgba(255,255,255,0.75)" }}
             >
-              Most trainers aren&apos;t disorganised. They&apos;re just using tools that
+              Most trainers aren&rsquo;t disorganised. They&rsquo;re just using tools that
               were never designed for them. Breedbase was built from scratch for
-              how dog trainers actually work — by someone whose wife is one.
+              how dog trainers actually work &mdash; by someone whose wife is one.
             </p>
           </div>
         </div>
@@ -169,7 +169,7 @@ export default function Home() {
             className="font-fraunces font-medium text-[40px] lg:text-[52px] leading-[1.05] mb-12"
             style={{ color: "var(--color-charcoal-dark)" }}
           >
-            Everything in one place. Nothing you don&apos;t need.
+            Everything in one place. Nothing you don&rsquo;t need.
           </h2>
 
           <div>
@@ -241,12 +241,12 @@ export default function Home() {
             className="font-inter text-[17px] leading-[1.7] max-w-[580px] mt-6"
             style={{ color: "rgba(255,255,255,0.7)" }}
           >
-            We&apos;re in early access. The first 20 trainers get 6 months completely
-            free. After that, founding members pay £10/month — locked for life.
-            We&apos;re doing this because we want trainers who&apos;ll tell us what to fix.
+            We&rsquo;re in early access. The first 20 trainers get 6 months completely
+            free. After that, founding members pay £10/month &mdash; locked for life.
+            We&rsquo;re doing this because we want trainers who&rsquo;ll tell us what to fix.
           </p>
           <div className="mt-10">
-            <Button variant="secondary" href="https://app.breedbase.com/signup">
+            <Button variant="primary" href="https://app.breedbase.com/signup">
               Claim your spot
             </Button>
           </div>
@@ -260,16 +260,19 @@ export default function Home() {
       </section>
 
       {/* 5. Final CTA */}
-      <section className="bg-canvas py-[80px] lg:py-[100px] text-center">
+      <section
+        className="py-[80px] lg:py-[100px] text-center"
+        style={{ background: "var(--color-bg)" }}
+      >
         <div className="max-w-site mx-auto px-6 lg:px-10">
           <h2
             className="font-fraunces font-medium text-[40px] lg:text-[52px] max-w-[640px] mx-auto leading-[1.08]"
             style={{ color: "var(--color-charcoal-dark)" }}
           >
-            Your clients deserve a trainer who isn&apos;t drowning in admin.
+            Your clients deserve a trainer who isn&rsquo;t drowning in admin.
           </h2>
           <div className="mt-10 flex justify-center">
-            <Button variant="secondary" href="https://app.breedbase.com/signup">
+            <Button variant="primary" href="https://app.breedbase.com/signup">
               Get free access
             </Button>
           </div>
