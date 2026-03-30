@@ -4,6 +4,20 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Privacy Policy — Breedbase",
   description: "How Breedbase collects, uses, and protects your personal data.",
+  openGraph: {
+    title: "Privacy Policy — Breedbase",
+    description: "How Breedbase collects, uses, and protects your personal data.",
+    url: "https://www.breedbase.com/privacy",
+    siteName: "Breedbase",
+    type: "website",
+    images: [{ url: "https://www.breedbase.com/og.png", width: 1200, height: 630, alt: "Breedbase privacy policy" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy — Breedbase",
+    description: "How Breedbase collects, uses, and protects your personal data.",
+    images: ["https://www.breedbase.com/og.png"],
+  },
 };
 
 const heading2: React.CSSProperties = {

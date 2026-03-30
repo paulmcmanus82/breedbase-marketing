@@ -27,6 +27,9 @@
   --color-error:         #D45B5B;
   --color-success:       #16A34A;
   --color-warning:       #D4922A;
+
+  /* Session type accents */
+  --color-group-class:   #7C3AED;
 }
 
 html { scroll-behavior: smooth; }

@@ -5,6 +5,22 @@ export const metadata: Metadata = {
   title: "Features — Breedbase",
   description:
     "Scheduling, client records, session notes, post-visit updates, and invoicing — built around how dog trainers actually work.",
+  openGraph: {
+    title: "Features — Breedbase",
+    description:
+      "Scheduling, client records, session notes, post-visit updates, and invoicing — built around how dog trainers actually work.",
+    url: "https://www.breedbase.com/features",
+    siteName: "Breedbase",
+    type: "website",
+    images: [{ url: "https://www.breedbase.com/og.png", width: 1200, height: 630, alt: "Breedbase features" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Features — Breedbase",
+    description:
+      "Scheduling, client records, session notes, post-visit updates, and invoicing — built around how dog trainers actually work.",
+    images: ["https://www.breedbase.com/og.png"],
+  },
 };
 
 const features = [

@@ -26,7 +26,7 @@ export function AppMockup() {
       client: "Dan B.",
       dog: "Zeus",
       type: "Group Class",
-      color: "#7C3AED",
+      color: "var(--color-group-class)",
     },
   ];
 

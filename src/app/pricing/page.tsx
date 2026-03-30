@@ -5,6 +5,22 @@ export const metadata: Metadata = {
   title: "Pricing — Breedbase",
   description:
     "6 months free for the first 20 trainers. Then £10/month, locked for life.",
+  openGraph: {
+    title: "Pricing — Breedbase",
+    description:
+      "6 months free for the first 20 trainers. Then £10/month, locked for life.",
+    url: "https://www.breedbase.com/pricing",
+    siteName: "Breedbase",
+    type: "website",
+    images: [{ url: "https://www.breedbase.com/og.png", width: 1200, height: 630, alt: "Breedbase pricing" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pricing — Breedbase",
+    description:
+      "6 months free for the first 20 trainers. Then £10/month, locked for life.",
+    images: ["https://www.breedbase.com/og.png"],
+  },
 };
 
 const includedFeatures = [

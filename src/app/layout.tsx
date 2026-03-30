@@ -29,6 +29,21 @@ export const metadata: Metadata = {
     url: "https://www.breedbase.com",
     siteName: "Breedbase",
     type: "website",
+    images: [
+      {
+        url: "https://www.breedbase.com/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Breedbase — Built for dog trainers",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Breedbase — Built for dog trainers",
+    description:
+      "Stop running your business on a WhatsApp thread and a prayer. Breedbase handles scheduling, client records, and training programmes.",
+    images: ["https://www.breedbase.com/og.png"],
   },
 };
 

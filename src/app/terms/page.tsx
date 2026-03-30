@@ -4,6 +4,20 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Terms and Conditions — Breedbase",
   description: "Terms and conditions for using the Breedbase platform.",
+  openGraph: {
+    title: "Terms and Conditions — Breedbase",
+    description: "Terms and conditions for using the Breedbase platform.",
+    url: "https://www.breedbase.com/terms",
+    siteName: "Breedbase",
+    type: "website",
+    images: [{ url: "https://www.breedbase.com/og.png", width: 1200, height: 630, alt: "Breedbase terms and conditions" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms and Conditions — Breedbase",
+    description: "Terms and conditions for using the Breedbase platform.",
+    images: ["https://www.breedbase.com/og.png"],
+  },
 };
 
 const heading2: React.CSSProperties = {
