@@ -100,7 +100,7 @@ export default function TermsPage() {
 
           <h2 style={heading2}>1. What Breedbase Is</h2>
           <p style={para}>
-            Breedbase is a business management platform for professional dog trainers. We provide tools for scheduling, client management, training plans, invoicing, and calendar integration. We are a software provider — we do not provide dog training services, veterinary advice, or any direct pet care services.
+            Breedbase is a business management platform for professional dog trainers. We provide tools for scheduling, client management, session notes, and invoicing. We are a software provider — we do not provide dog training services, veterinary advice, or any direct pet care services.
           </p>
 
           <hr style={rule} />
@@ -121,16 +121,16 @@ export default function TermsPage() {
           <ul style={{ paddingLeft: "24px", marginBottom: "14px" }}>
             <li style={listItem}>Create and manage client and pet records</li>
             <li style={listItem}>Schedule and track training sessions</li>
-            <li style={listItem}>Build and assign training plans</li>
+            <li style={listItem}>Log session notes and track behaviour</li>
             <li style={listItem}>Generate invoices and accept payments</li>
-            <li style={listItem}>Import client data via CSV</li>
+            <li style={listItem}>Send post-visit updates to clients</li>
           </ul>
 
           <hr style={rule} />
 
           <h2 style={heading2}>4. Your Data and Content</h2>
           <ul style={{ paddingLeft: "24px", marginBottom: "14px" }}>
-            <li style={listItem}><strong>You own your data.</strong> All client records, session notes, training plans, and other content you create in Breedbase belongs to you</li>
+            <li style={listItem}><strong>You own your data.</strong> All client records, session notes, and other content you create in Breedbase belongs to you</li>
             <li style={listItem}>You grant us a limited licence to host, store, and display your data solely for the purpose of providing the Breedbase platform to you</li>
             <li style={listItem}>You can export your data at any time</li>
             <li style={listItem}>You can delete your data at any time</li>
@@ -164,7 +164,7 @@ export default function TermsPage() {
             <li style={listItem}>Guarantee training outcomes for any dog or client</li>
           </ul>
           <p style={para}>
-            Any training plans, session notes, or behavioural records stored in Breedbase reflect the professional judgment of the trainer who created them. We accept no liability for training methods, outcomes, or decisions made based on information stored in the platform.
+            Any session notes or behavioural records stored in Breedbase reflect the professional judgment of the trainer who created them. We accept no liability for training methods, outcomes, or decisions made based on information stored in the platform.
           </p>
 
           <hr style={rule} />
@@ -218,7 +218,7 @@ export default function TermsPage() {
             <li style={listItem}>The Breedbase platform, including its design, code, and branding, is our intellectual property</li>
             <li style={listItem}>You may not copy, modify, distribute, or reverse-engineer any part of the platform</li>
             <li style={listItem}>&ldquo;Breedbase&rdquo; is our trading name and you may not use it in a way that implies endorsement or affiliation without our written permission</li>
-            <li style={listItem}>Content you create (training plans, session notes, client records) remains your intellectual property</li>
+            <li style={listItem}>Content you create (session notes, client records) remains your intellectual property</li>
           </ul>
 
           <hr style={rule} />

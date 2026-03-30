@@ -21,11 +21,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Breedbase — Built for dog trainers",
   description:
-    "Scheduling, client records, and training programmes — built for professional dog trainers, not adapted from something else.",
+    "Scheduling, client records, and session notes — built for professional dog trainers, not adapted from something else.",
   openGraph: {
     title: "Breedbase — Built for dog trainers",
     description:
-      "Stop running your business on a WhatsApp thread and a prayer. Breedbase handles scheduling, client records, and training programmes.",
+      "Stop running your business on a WhatsApp thread and a prayer. Breedbase handles scheduling, client records, and session notes.",
     url: "https://www.breedbase.com",
     siteName: "Breedbase",
     type: "website",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Breedbase — Built for dog trainers",
     description:
-      "Stop running your business on a WhatsApp thread and a prayer. Breedbase handles scheduling, client records, and training programmes.",
+      "Stop running your business on a WhatsApp thread and a prayer. Breedbase handles scheduling, client records, and session notes.",
     images: ["https://www.breedbase.com/og.png"],
   },
 };

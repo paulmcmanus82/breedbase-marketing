@@ -69,7 +69,7 @@ export function Footer() {
             <a
               href="https://app.breedbase.com/signup"
               className="transition-colors"
-              style={{ color: "#ffffff", textDecoration: "underline", textUnderlineOffset: "3px" }}
+              style={{ color: "var(--color-surface)", textDecoration: "underline", textUnderlineOffset: "3px" }}
             >
               Get 6 months free &rarr;
             </a>

@@ -42,6 +42,32 @@ export function Nav() {
 
           {/* Desktop right */}
           <div className="hidden md:flex items-center gap-6">
+            <Link
+              href="/features"
+              className="font-inter font-medium text-sm transition-colors"
+              style={{ color: "var(--color-text-primary)" }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.color = "var(--color-teal)")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.color = "var(--color-text-primary)")
+              }
+            >
+              Features
+            </Link>
+            <Link
+              href="/pricing"
+              className="font-inter font-medium text-sm transition-colors"
+              style={{ color: "var(--color-text-primary)" }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.color = "var(--color-teal)")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.color = "var(--color-text-primary)")
+              }
+            >
+              Pricing
+            </Link>
             <a
               href="https://app.breedbase.com/login"
               className="font-inter font-medium text-sm transition-colors"

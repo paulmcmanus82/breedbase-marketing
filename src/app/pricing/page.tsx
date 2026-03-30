@@ -69,7 +69,7 @@ export default function PricingPage() {
             PRICING
           </p>
           <h1
-            className="font-fraunces font-medium text-[48px] lg:text-[64px] leading-[1.04] text-white max-w-[640px]"
+            className="font-fraunces font-medium text-[36px] md:text-[48px] lg:text-[64px] leading-[1.04] text-white max-w-[640px]"
           >
             Simple. Embarrassingly good right now.
           </h1>
