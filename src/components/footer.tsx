@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LogoWordmark } from "@/components/logo-wordmark";
 
 export function Footer() {
   return (
@@ -7,9 +8,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8">
           {/* Left */}
           <div className="space-y-3">
-            <p className="font-fraunces text-[22px] text-white leading-none">
-              Breedbase
-            </p>
+            <LogoWordmark variant="white" size="lg" />
             <p
               className="font-inter text-sm leading-relaxed max-w-[280px]"
               style={{ color: "rgba(255,255,255,0.65)" }}

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { LogoWordmark } from "@/components/logo-wordmark";
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -33,11 +34,11 @@ export function Nav() {
           {/* Wordmark */}
           <Link
             href="/"
-            className="font-fraunces font-semibold text-[20px] leading-none transition-opacity hover:opacity-70"
-            style={{ color: "var(--color-charcoal-dark)" }}
+            className="transition-opacity hover:opacity-70"
+            style={{ textDecoration: "none" }}
             onClick={() => setMobileOpen(false)}
           >
-            Breedbase
+            <LogoWordmark variant="dark" size="md" />
           </Link>
 
           {/* Desktop right */}
