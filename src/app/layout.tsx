@@ -19,13 +19,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Breedbase — Built for dog trainers",
+  title: "Breedbase — Business management for dog walkers and trainers",
   description:
-    "Scheduling, client records, and session notes — built for professional dog trainers, not adapted from something else.",
+    "Breedbase handles your scheduling, client records, session notes, and post-visit updates — built for dog walkers and trainers, not adapted from something else.",
   openGraph: {
-    title: "Breedbase — Built for dog trainers",
+    title: "Breedbase — Business management for dog walkers and trainers",
     description:
-      "Stop running your business on a WhatsApp thread and a prayer. Breedbase handles scheduling, client records, and session notes.",
+      "Breedbase handles your scheduling, client records, session notes, and post-visit updates — built for dog walkers and trainers, not adapted from something else.",
     url: "https://www.breedbase.com",
     siteName: "Breedbase",
     type: "website",
@@ -34,15 +34,15 @@ export const metadata: Metadata = {
         url: "https://www.breedbase.com/og.png",
         width: 1200,
         height: 630,
-        alt: "Breedbase — Built for dog trainers",
+        alt: "Breedbase — Business management for dog walkers and trainers",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Breedbase — Built for dog trainers",
+    title: "Breedbase — Business management for dog walkers and trainers",
     description:
-      "Stop running your business on a WhatsApp thread and a prayer. Breedbase handles scheduling, client records, and session notes.",
+      "Breedbase handles your scheduling, client records, session notes, and post-visit updates — built for dog walkers and trainers, not adapted from something else.",
     images: ["https://www.breedbase.com/og.png"],
   },
 };

@@ -4,11 +4,11 @@ import { Button } from "@/components/button";
 export const metadata: Metadata = {
   title: "Features — Breedbase",
   description:
-    "Scheduling, client records, session notes, post-visit updates, and invoicing — built around how dog trainers actually work.",
+    "Scheduling, client records, session notes, post-visit updates, and invoicing — built around how dog walkers and trainers actually work.",
   openGraph: {
     title: "Features — Breedbase",
     description:
-      "Scheduling, client records, session notes, post-visit updates, and invoicing — built around how dog trainers actually work.",
+      "Scheduling, client records, session notes, post-visit updates, and invoicing — built around how dog walkers and trainers actually work.",
     url: "https://www.breedbase.com/features",
     siteName: "Breedbase",
     type: "website",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Features — Breedbase",
     description:
-      "Scheduling, client records, session notes, post-visit updates, and invoicing — built around how dog trainers actually work.",
+      "Scheduling, client records, session notes, post-visit updates, and invoicing — built around how dog walkers and trainers actually work.",
     images: ["https://www.breedbase.com/og.png"],
   },
 };
@@ -37,12 +37,18 @@ const features = [
   {
     name: "Client & dog profiles",
     description:
-      "Every client, every dog, every session \u2014 in one place. Breed, vaccination records with expiry alerts, behavioural history, emergency contacts. The stuff that lives in your head right now.",
+      "Every client, every dog, every visit \u2014 in one place. Breed, vaccination records with expiry alerts, behavioural history, vet details, emergency contacts. The stuff that lives in your head right now.",
   },
   {
     name: "Session notes & behaviour log",
     description:
       "After a session, open the dog\u2019s profile and write your notes directly. Tag the behaviour areas you worked on \u2014 reactivity, recall, leash manners, separation anxiety, and more. Notes are attached to that session, date-stamped, and permanent. Six months later when someone asks where you left off \u2014 you know. When a dog gets referred to a vet, you have the full history ready.",
+  },
+  {
+    name: "Route planning",
+    description:
+      "For dog walkers: plan your morning pickup round in seconds. Optimal order, client addresses auto-loaded from your records, opens straight into Google Maps. Save 20 minutes every morning.",
+    comingSoon: true,
   },
   {
     name: "Invoicing",
@@ -87,7 +93,15 @@ export default function FeaturesPage() {
             className="font-inter text-[17px] leading-[1.6] max-w-[520px]"
             style={{ color: "rgba(255,255,255,0.7)" }}
           >
-            Not how a software company thinks you work.
+            Whether you walk dogs, train them, or both.
+          </p>
+          <p
+            className="font-inter text-[17px] leading-[1.7] max-w-[560px] mt-5"
+            style={{ color: "rgba(255,255,255,0.6)" }}
+          >
+            Breedbase is built around the dog &mdash; not the appointment, not
+            the invoice, not the admin. Every feature works whether you&rsquo;re
+            a dog walker, a trainer, or both. Your wife might be both. Ours is.
           </p>
         </div>
       </section>
@@ -162,8 +176,8 @@ export default function FeaturesPage() {
             className="font-inter text-[17px] leading-[1.7] max-w-[580px] mt-6"
             style={{ color: "rgba(255,255,255,0.7)" }}
           >
-            The first 20 trainers get 6 months completely free. After that,
-            £10/month &mdash; locked for life.
+            The first 20 dog walkers and trainers get 6 months completely free.
+            After that, £10/month &mdash; locked for life.
           </p>
           <div className="mt-10">
             <Button variant="primary" href="https://app.breedbase.com/signup">

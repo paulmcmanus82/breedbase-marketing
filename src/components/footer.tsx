@@ -13,7 +13,7 @@ export function Footer() {
               className="font-inter text-sm leading-relaxed max-w-[280px]"
               style={{ color: "rgba(255,255,255,0.65)" }}
             >
-              Built for professional dog trainers in the UK.
+              Built for professional dog walkers and trainers in the UK.
             </p>
           </div>
 

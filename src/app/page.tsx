@@ -5,7 +5,7 @@ const features = [
   {
     name: "Scheduling",
     description:
-      "Book solo walks, group classes, 1:1 training, drop-ins, and boarding from your phone in under a minute. Colour-coded by session type. Never manage two diaries again.",
+      "Book solo walks, group walks, 1:1 training sessions, group classes, and drop-ins from your phone in under a minute. Colour-coded by session type. Never manage two diaries again.",
   },
   {
     name: "Post-visit updates in seconds",
@@ -15,12 +15,18 @@ const features = [
   {
     name: "Client & dog profiles",
     description:
-      "Every client, every dog, every session — in one place. Breed, vaccination records with expiry alerts, behavioural history, emergency contacts. The stuff that lives in your head right now.",
+      "Every client, every dog, every visit — in one place. Breed, vaccination records with expiry alerts, behavioural history, vet details, emergency contacts. The stuff that lives in your head right now.",
   },
   {
     name: "Session notes",
     description:
       "Log what happened while it\u2019s fresh. Tag behaviour areas covered — reactivity, recall, leash manners, and more. Notes attach to the dog\u2019s record automatically. Six months later, you\u2019ll know exactly where you left off.",
+  },
+  {
+    name: "Route planning",
+    description:
+      "For dog walkers: plan your morning pickup round in seconds. Optimal order, client addresses auto-loaded from your records, opens straight into Google Maps. Save 20 minutes every morning.",
+    comingSoon: true,
   },
   {
     name: "Homework delivery",
@@ -48,7 +54,7 @@ export default function Home() {
                 className="font-inter text-[11px] font-semibold uppercase tracking-[0.12em] mb-6"
                 style={{ color: "var(--color-text-muted)" }}
               >
-                THE BUSINESS TOOL FOR DOG TRAINERS
+                THE BUSINESS TOOL FOR DOG WALKERS &amp; TRAINERS
               </p>
               <h1
                 className="font-fraunces font-semibold text-[52px] lg:text-[88px] leading-[1.0] tracking-[-0.02em]"
@@ -68,9 +74,9 @@ export default function Home() {
                 className="font-inter text-[17px] leading-[1.7] max-w-[480px] mt-6"
                 style={{ color: "var(--color-text-muted)" }}
               >
-                Breedbase handles your scheduling, client records, and session
-                notes &mdash; built for dog trainers, not adapted from something
-                else.
+                Breedbase handles your scheduling, client records, session
+                notes, and post-visit updates &mdash; built for dog walkers and
+                trainers, not adapted from something else.
               </p>
               <div className="mt-10">
                 <Button variant="primary" href="https://app.breedbase.com/signup">
@@ -81,7 +87,7 @@ export default function Home() {
                 className="font-inter text-[13px] mt-3"
                 style={{ color: "var(--color-text-muted)" }}
               >
-                First 20 trainers only &middot; No credit card &middot; £10/month after
+                First 20 spots only &middot; No credit card &middot; £10/month after
               </p>
             </div>
 
@@ -108,14 +114,14 @@ export default function Home() {
           <h2
             className="font-fraunces font-medium text-[40px] lg:text-[56px] leading-[1.05] text-white mb-14"
           >
-            You&rsquo;re organised. Your tools aren&rsquo;t.
+            You&rsquo;re a professional. Your tools don&rsquo;t act like it.
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
             {[
               {
                 n: "01",
-                text: "Your client\u2019s address is in a text from six months ago.",
+                text: "Your client\u2019s dog\u2019s address, medical notes, and emergency contact are in three different places.",
               },
               {
                 n: "02",
@@ -123,7 +129,7 @@ export default function Home() {
               },
               {
                 n: "03",
-                text: "The session notes are in four different apps and your memory.",
+                text: "You typed the same post-visit WhatsApp update six times today \u2014 once per dog.",
               },
             ].map(({ n, text }) => (
               <div key={n}>
@@ -148,9 +154,10 @@ export default function Home() {
               className="font-inter text-[17px] leading-[1.7] max-w-[640px]"
               style={{ color: "rgba(255,255,255,0.75)" }}
             >
-              Most trainers aren&rsquo;t disorganised. They&rsquo;re just using tools that
-              were never designed for them. Breedbase was built from scratch for
-              how dog trainers actually work &mdash; by someone whose wife is one.
+              Most dog professionals aren&rsquo;t disorganised. They&rsquo;re just using
+              tools that were never designed for them. Breedbase was built from
+              scratch for how dog walkers and trainers actually work &mdash; by
+              someone whose wife is both.
             </p>
           </div>
         </div>
@@ -169,7 +176,7 @@ export default function Home() {
             className="font-fraunces font-medium text-[40px] lg:text-[52px] leading-[1.05] mb-12"
             style={{ color: "var(--color-charcoal-dark)" }}
           >
-            Everything in one place. Nothing you don&rsquo;t need.
+            Everything you need. Nothing you don&rsquo;t.
           </h2>
 
           <div>
@@ -241,9 +248,10 @@ export default function Home() {
             className="font-inter text-[17px] leading-[1.7] max-w-[580px] mt-6"
             style={{ color: "rgba(255,255,255,0.7)" }}
           >
-            We&rsquo;re in early access. The first 20 trainers get 6 months completely
-            free. After that, founding members pay £10/month &mdash; locked for life.
-            We&rsquo;re doing this because we want trainers who&rsquo;ll tell us what to fix.
+            We&rsquo;re in early access. The first 20 dog walkers and trainers get 6
+            months completely free. After that, founding members pay £10/month
+            &mdash; locked for life. We&rsquo;re doing this because we want professionals
+            who&rsquo;ll tell us what to fix.
           </p>
           <div className="mt-10">
             <Button variant="primary" href="https://app.breedbase.com/signup">
