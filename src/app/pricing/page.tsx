@@ -4,11 +4,11 @@ import { Button } from "@/components/button";
 export const metadata: Metadata = {
   title: "Pricing — Breedbase",
   description:
-    "6 months free for the first 20 trainers. Then £10/month, locked for life.",
+    "6 months free for the first 20 dog walkers and trainers. Then £10/month, locked for life.",
   openGraph: {
     title: "Pricing — Breedbase",
     description:
-      "6 months free for the first 20 trainers. Then £10/month, locked for life.",
+      "6 months free for the first 20 dog walkers and trainers. Then £10/month, locked for life.",
     url: "https://www.breedbase.com/pricing",
     siteName: "Breedbase",
     type: "website",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pricing — Breedbase",
     description:
-      "6 months free for the first 20 trainers. Then £10/month, locked for life.",
+      "6 months free for the first 20 dog walkers and trainers. Then £10/month, locked for life.",
     images: ["https://www.breedbase.com/og.png"],
   },
 };
@@ -48,7 +48,7 @@ const faqs = [
     a: "Just stop. No contracts, no cancellation flows.",
   },
   {
-    q: "Is Breedbase only for UK trainers?",
+    q: "Is Breedbase only for UK dog walkers and trainers?",
     a: "For now, yes. We\u2019re building specifically for the UK market first.",
   },
 ];
@@ -91,7 +91,7 @@ export default function PricingPage() {
                 className="font-inter font-semibold text-[11px] uppercase tracking-[0.12em] mb-6"
                 style={{ color: "var(--color-teal)" }}
               >
-                FOUNDING TRAINER
+                FOUNDING MEMBER
               </p>
 
               {/* Price */}
@@ -119,7 +119,7 @@ export default function PricingPage() {
                 className="font-inter font-semibold text-[14px] mt-1"
                 style={{ color: "var(--color-amber)" }}
               >
-                First {FOUNDING_SPOTS} trainers only.
+                First {FOUNDING_SPOTS} dog professionals only.
               </p>
 
               {/* Feature list */}

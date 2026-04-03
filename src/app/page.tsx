@@ -277,7 +277,7 @@ export default function Home() {
             className="font-fraunces font-medium text-[40px] lg:text-[52px] max-w-[640px] mx-auto leading-[1.08]"
             style={{ color: "var(--color-charcoal-dark)" }}
           >
-            Your clients deserve a trainer who isn&rsquo;t drowning in admin.
+            Your clients deserve someone who isn&rsquo;t drowning in admin.
           </h2>
           <div className="mt-10 flex justify-center">
             <Button variant="primary" href="https://app.breedbase.com/signup">
